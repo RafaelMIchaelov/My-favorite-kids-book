@@ -1,0 +1,31 @@
+{
+  "note": "מצב בניית הסטוריבורד של פרק 1 ב-Magnific Spaces. משמש להמשך העבודה אחרי הפעלה מחדש.",
+  "spaceUrl": "https://www.magnific.com/app/spaces/a2fe83ba-57c9-413c-b7d1-be11aebdc610",
+  "spaceId": "a2fe83ba-57c9-413c-b7d1-be11aebdc610",
+  "built": {
+    "panel_inputs": "99ec5850-3476-4f0c-89b9-40188d507094",
+    "yud_exact_creation": "e1f911d3-1c5f-49d4-87d7-e7ce868d8c8e",
+    "yud_character_sheet": "43c157a4-0a0b-4a02-9a43-6a0f6bee33b7",
+    "yud_description": "c2d9d187-56d5-4c8e-b18d-01f5ef3d32db",
+    "style_plate": "9ec5722f-8042-477b-b86e-852c66eb2a86",
+    "panel_locations": "e44f5fb1-f29d-44f4-97c3-92d493ffd7f9",
+    "loc_babylon_river_night": "425fd692-9a23-4327-88d5-f75668e4cf16",
+    "loc_babylon_street_dawn": "63a3ca11-0946-439a-bb15-ff5a901d9f63",
+    "loc_desert_road": "1d84be18-c0fd-4d28-8f80-6ac06ee171a9",
+    "loc_jerusalem_ruins": "079e5386-9b85-42ad-af7f-4c2e7d252184"
+  },
+  "magnificCreations": {
+    "yud_expressions": "ovgX4Fa829", "yud_shape": "jUWrdN7LD0",
+    "p01": "lJTLoRbgv9", "p02": "mE7IijghJQ", "p03": "LwcxXARswO", "p04": "ksG5MRw16B",
+    "p05": "9ZIPuUcNYZ", "p06": "lJTLo1Zgv9", "p07": "WDqnLGmcXe", "p08": "WDqnLnvcXe",
+    "p09": "LwcxXLrswO", "p10": "P3oOE6U42C", "p11": "yiBJC3TPW9", "p12": "VXk0U8gMMU",
+    "p13": "huJtRbYvqL", "p14": "xSY1d4WjfW", "p15": "P3oOE0R42C", "p16": "p8xMJq1ehw"
+  },
+  "todo": [
+    "connect yud_exact_creation -> yud_character_sheet",
+    "create 4 page panels: per page sketch creation + Seedream frame + Nano Banana Pro frame + text (Hebrew + PaRDeS)",
+    "cover frames",
+    "connect sheet + plate + location (+ sketch for NB Pro) -> frames",
+    "run whole graph (fresh build), poll, share link"
+  ]
+}

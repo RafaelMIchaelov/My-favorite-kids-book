@@ -97,7 +97,7 @@
       });
       var soonHtml = soon.length ? '<section class="soon"><h2 class="section-title">בפרקים הבאים</h2><ol class="soon-list">' +
         soon.map(function (c) {
-          return '<li><span class="soon-n">' + c.n + '</span><span class="soon-t">' + esc(c.title) + "</span></li>";
+          return '<li><span class="soon-n">' + c.n + '</span><span class="soon-t">' + esc(c.title) + '</span><span class="soon-tag">בקרוב</span></li>';
         }).join("") + "</ol></section>" : "";
 
       setView("library",
@@ -179,12 +179,12 @@
         '<p class="end-mark">סוֹף פֶּרֶק ' + b.chapter + "</p>" +
         '<p class="end-teaser">' + esc(b.teaser) + "</p>" +
         (next ? '<p class="end-next">פֶּרֶק ' + (b.chapter + 1) + ": <strong>" + esc(next.title) + "</strong> · בְּקָרוֹב</p>" : "") +
+        '<div class="end-actions">' + donateButton() +
+          '<a class="btn btn-link" href="#/about">לאן הולך הכסף?</a>' +
+        "</div>" +
         (q ? '<div class="end-questions"><h2>לְשִׂיחָה אַחֲרֵי הַקְּרִיאָה</h2><ul>' + q + "</ul></div>" : "") +
         sourcesHtml(b.sourcesNotes) +
-        '<div class="end-actions">' + donateButton() +
-          '<a class="btn btn-ghost" href="#/about">לאן הולך הכסף?</a>' +
-          '<a class="btn btn-link" href="#/book/' + b.id + '/1">לקרוא שוב מההתחלה</a>' +
-        "</div>" +
+        '<a class="btn btn-link" href="#/book/' + b.id + '/1">לקרוא שוב מההתחלה</a>' +
       "</div></article>";
   }
 
@@ -327,7 +327,6 @@
         '<h2 class="section-title">שקיפות</h2>' +
         '<p>נפרסם כאן באופן קבוע כמה נאסף, כמה הועבר לכל עמותה, ומה נוצר מהחצי השני.</p>' +
         '<div class="about-actions">' + donateButton() + '<a class="btn btn-ghost" href="#/">לספרים</a></div>' +
-        '<p class="about-note">הקישור לתרומה הוא זמני בשלב זה.</p>' +
       "</section>" + footer());
   }
 

@@ -3,6 +3,6 @@ window.SITE = {
   name: "ספרייה קטנה",
   // קישור זמני — להחליף בקישור התרומה/רכישה האמיתי
   donateUrl: "https://example.com/donate",
-  donateLabel: "לתרום ולקבל את הספר",
+  donateLabel: "לתרום ולתמוך במיזם",
   contactEmail: ""
 };

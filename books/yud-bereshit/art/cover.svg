@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice"><!-- bg:#1B2247 -->
+<rect width="400" height="500" fill="url(#cv-sky)"/>
+<defs>
+<linearGradient id="cv-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141A3A"/><stop offset=".7" stop-color="#1B2247"/><stop offset="1" stop-color="#2A3366"/></linearGradient>
+<radialGradient id="cv-glow"><stop offset="0" stop-color="#F6CD7A" stop-opacity=".5"/><stop offset="1" stop-color="#F6CD7A" stop-opacity="0"/></radialGradient>
+<radialGradient id="cv-yglow"><stop offset="0" stop-color="#FBF6EC" stop-opacity=".8"/><stop offset=".45" stop-color="#FBF6EC" stop-opacity=".4"/><stop offset="1" stop-color="#FBF6EC" stop-opacity="0"/></radialGradient>
+<mask id="cv-moon"><circle cx="300" cy="150" r="26" fill="#fff"/><circle cx="312" cy="142" r="22" fill="#000"/></mask>
+<path id="cv-yud" d="M7 14C7 6.5 13 2 20.5 2C28.5 2 34 7 34 14.5C34 22 28.5 25.5 23 27.5C19.5 28.8 17.6 33 16.2 41.5C15.6 45.3 10.6 45 10.8 41C11.2 33.5 12.3 28 14 24.6C9.8 22.6 7 18.8 7 14Z"/>
+</defs>
+<g fill="#FBF6EC">
+<circle cx="70" cy="120" r="1.6" opacity=".7"/><circle cx="120" cy="80" r="1.2" opacity=".5"/><circle cx="96" cy="200" r="1.4" opacity=".6"/><circle cx="54" cy="270" r="1.2" opacity=".5"/><circle cx="150" cy="140" r="1" opacity=".5"/><circle cx="250" cy="96" r="1.3" opacity=".6"/><circle cx="350" cy="230" r="1.5" opacity=".6"/><circle cx="330" cy="300" r="1.1" opacity=".5"/><circle cx="270" cy="250" r="1" opacity=".45"/><circle cx="130" cy="300" r="1.1" opacity=".45"/><circle cx="360" cy="80" r="1.2" opacity=".5"/><circle cx="40" cy="380" r="1" opacity=".4"/><circle cx="370" cy="370" r="1" opacity=".4"/><circle cx="210" cy="60" r="1" opacity=".4"/>
+</g>
+<path d="M0 -6Q1.2 -1.2 6 0Q1.2 1.2 0 6Q-1.2 1.2 -6 0Q-1.2 -1.2 0 -6Z" fill="#F6CD7A" transform="translate(112 236)"/>
+<path d="M0 -6Q1.2 -1.2 6 0Q1.2 1.2 0 6Q-1.2 1.2 -6 0Q-1.2 -1.2 0 -6Z" fill="#F6CD7A" transform="translate(318 270) scale(.8)"/>
+<circle cx="300" cy="150" r="26" fill="#E6E8F2" mask="url(#cv-moon)"/>
+<circle cx="200" cy="190" r="44" fill="url(#cv-glow)"/>
+<path d="M0 -30Q3 -3 30 0Q3 3 0 30Q-3 3 -30 0Q-3 -3 0 -30Z" fill="#F6CD7A" opacity=".8" transform="translate(200 190)"/>
+<circle cx="200" cy="190" r="13" fill="#FBF6EC"/>
+<circle cx="200" cy="356" r="48" fill="url(#cv-yglow)"/>
+<path d="M-20 455Q200 305 420 455V500H-20Z" fill="#2A3366"/>
+<g transform="translate(173 324) scale(1.3)">
+<use href="#cv-yud" fill="none" stroke="#F6CD7A" stroke-width="2.5"/>
+<use href="#cv-yud" fill="#24305E"/>
+<circle cx="16.5" cy="11" r="2.8" fill="#fff"/><circle cx="25.5" cy="11" r="2.8" fill="#fff"/>
+</g>
+</svg>

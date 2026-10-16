@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice"><!-- bg:#F9E1A6 -->
+<rect width="400" height="400" fill="url(#p06-sky)"/>
+<defs>
+<linearGradient id="p06-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FBEBC2"/><stop offset="1" stop-color="#F6D48E"/></linearGradient>
+<path id="p06-bet" d="M136 112H238Q262 112 262 136V234M118 236H292" fill="none" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+</defs>
+<g transform="rotate(-8 205 175)">
+<use href="#p06-bet" stroke="#E9B865" transform="translate(5 6)"/>
+<use href="#p06-bet" stroke="#FBF6EC"/>
+</g>
+<g fill="none" stroke="#C98A2E" stroke-width="2.5" stroke-linecap="round" opacity=".55">
+<path d="M150 292Q205 306 260 292"/><path d="M172 310Q207 320 242 310"/>
+</g>
+<g fill="#C98A2E" opacity=".5"><circle cx="112" cy="176" r="3"/><circle cx="94" cy="182" r="3"/><circle cx="76" cy="190" r="3"/><circle cx="59" cy="200" r="3"/><circle cx="44" cy="212" r="3"/></g>
+<g transform="translate(312 296)">
+<path d="M7 14C7 6.5 13 2 20.5 2C28.5 2 34 7 34 14.5C34 22 28.5 25.5 23 27.5C19.5 28.8 17.6 33 16.2 41.5C15.6 45.3 10.6 45 10.8 41C11.2 33.5 12.3 28 14 24.6C9.8 22.6 7 18.8 7 14Z" fill="#24305E"/>
+<circle cx="15.5" cy="15.5" r="2.5" fill="#fff"/><circle cx="24.5" cy="15.5" r="2.5" fill="#fff"/>
+</g>
+<path d="M300 302Q294 296 298 290Q302 284 296 278" fill="none" stroke="#24305E" stroke-width="1.8" stroke-linecap="round" opacity=".5"/>
+</svg>

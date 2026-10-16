@@ -1,25 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice"><!-- bg:#2E2A5C -->
 <rect width="400" height="400" fill="url(#p01-sky)"/>
 <defs>
-<linearGradient id="p01-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#232B5E"/><stop offset="1" stop-color="#43305E"/></linearGradient>
+<linearGradient id="p01-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#232B5E"/><stop offset="1" stop-color="#2A2650"/></linearGradient>
 <path id="p01-yud" d="M7 14C7 6.5 13 2 20.5 2C28.5 2 34 7 34 14.5C34 22 28.5 25.5 23 27.5C19.5 28.8 17.6 33 16.2 41.5C15.6 45.3 10.6 45 10.8 41C11.2 33.5 12.3 28 14 24.6C9.8 22.6 7 18.8 7 14Z"/>
 </defs>
 <g fill="#FBF6EC">
 <circle cx="64" cy="70" r="1.4" opacity=".5"/><circle cx="148" cy="44" r="1" opacity=".4"/><circle cx="236" cy="88" r="1.3" opacity=".45"/><circle cx="318" cy="56" r="1.1" opacity=".4"/><circle cx="350" cy="122" r="1.4" opacity=".35"/><circle cx="104" cy="128" r="1" opacity=".35"/><circle cx="276" cy="140" r="1" opacity=".3"/><circle cx="40" cy="160" r="1.1" opacity=".3"/><circle cx="190" cy="120" r="0.9" opacity=".3"/><circle cx="90" cy="330" r="1" opacity=".2"/><circle cx="300" cy="350" r="1.1" opacity=".2"/><circle cx="210" cy="310" r=".9" opacity=".18"/>
 </g>
-<path transform="translate(0 18)" d="M20 250Q200 225 380 250" fill="none" stroke="#F3E3C3" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+<path d="M20 268Q200 243 380 268" fill="none" stroke="#1B1840" stroke-width="6" stroke-linecap="round"/>
 <g transform="translate(47 226) scale(.85)">
 <use href="#p01-yud" fill="none" stroke="#F6CD7A" stroke-width="2.5"/>
 <use href="#p01-yud" fill="#24305E"/>
 <circle cx="16" cy="13" r="2.8" fill="#fff"/><circle cx="25" cy="13" r="2.8" fill="#fff"/>
 </g>
-<g fill="#F3E3C3" transform="translate(0 18)">
-<rect x="72" y="186" width="24" height="60" rx="11"/>
-<circle cx="126" cy="219" r="22"/>
-<path d="M160 239V176Q160 164 150 160Q146 150 156 148Q172 146 176 164V239Z"/>
-<path d="M192 238Q188 214 196 200Q204 190 210 202Q216 214 224 202Q232 192 236 206Q240 222 236 238Z"/>
-<rect x="250" y="192" width="34" height="47" rx="13"/>
-<rect x="298" y="168" width="20" height="74" rx="10"/>
-<path d="M330 246Q326 216 344 206Q362 200 366 222Q368 236 366 248Z"/>
+<g fill="none" stroke="#F3E3C3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(70.0 257.2) rotate(-3.0) scale(1.15)"><path d="M2 -40Q3 -4 17 -4Q31 -4 32 -40M17 -4Q15 -20 17 -34"/><circle cx="2" cy="-42" r="1" stroke-width="10"/><circle cx="17" cy="-36" r="1" stroke-width="10"/><circle cx="32" cy="-42" r="1" stroke-width="10"/></g>
+<g transform="translate(121.0 254.0) rotate(3.0) scale(1.1)"><path d="M0 -42L5 -37V-8M7 -40H25Q31 -40 31 -34V-4H16"/></g>
+<g transform="translate(166.0 252.6) rotate(-2.0) scale(1.0)"><path d="M1 -64Q3 -72 9 -70V-44H23Q28 -44 28 -39V-20Q28 -6 15 -3"/></g>
+<g transform="translate(212.0 252.8) rotate(4.0) scale(1.15)"><path d="M1 -40H24Q30 -40 30 -34V-4M7 -26V-4"/></g>
+<g transform="translate(258.0 254.5) rotate(-3.0) scale(1.2)"><path d="M5 -40H11Q17 -40 17 -33L19 -4M18 -15L6 -4"/></g>
+<g transform="translate(291.0 257.2) rotate(2.0) scale(1.1)"><path d="M3 -40H22Q28 -40 28 -34V-4M1 -4H34"/></g>
+<g transform="translate(338.0 261.9) rotate(-4.0) scale(1.15)"><path d="M4 -40L28 -4M27 -40Q28 -27 18 -25M10 -21L5 -4"/></g>
 </g>
 </svg>

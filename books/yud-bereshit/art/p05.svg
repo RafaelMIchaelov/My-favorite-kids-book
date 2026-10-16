@@ -11,12 +11,14 @@
 </g>
 <circle cx="200" cy="40" r="9" fill="#FBF6EC"/>
 <path d="M-20 400Q200 300 420 400Z" fill="#2A3366"/>
-<g fill="#F3E3C3">
-<rect x="104" y="318" width="20" height="46" rx="10" transform="rotate(10 114 362)"/>
-<circle cx="160" cy="336" r="17"/>
-<path d="M190 352V308Q190 298 182 295Q178 287 186 285Q200 284 204 298V352Z"/>
-<path d="M234 354Q230 334 238 324Q245 316 250 326Q255 336 262 326Q269 318 272 330Q275 342 272 356Z" transform="rotate(-6 252 354)"/>
-<rect x="296" y="320" width="26" height="40" rx="11" transform="rotate(-12 309 360)"/>
+<g fill="none" stroke="#F3E3C3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(95.0 360.8) rotate(9.1) scale(1.05)"><path d="M2 -40Q3 -4 17 -4Q31 -4 32 -40M17 -4Q15 -20 17 -34"/><circle cx="2" cy="-42" r="1" stroke-width="10"/><circle cx="17" cy="-36" r="1" stroke-width="10"/><circle cx="32" cy="-42" r="1" stroke-width="10"/></g>
+<g transform="translate(140.0 355.0) rotate(4.8) scale(1.0)"><path d="M0 -42L5 -37V-8M7 -40H25Q31 -40 31 -34V-4H16"/></g>
+<g transform="translate(180.0 353.0) rotate(0.6) scale(1.0)"><path d="M1 -64Q3 -72 9 -70V-44H23Q28 -44 28 -39V-20Q28 -6 15 -3"/></g>
+<g transform="translate(219.0 354.3) rotate(-3.8) scale(1.05)"><path d="M1 -40H24Q30 -40 30 -34V-4M7 -26V-4"/></g>
+<g transform="translate(261.0 358.6) rotate(-7.8) scale(1.1)"><path d="M5 -40H11Q17 -40 17 -33L19 -4M18 -15L6 -4"/></g>
+<g transform="translate(292.0 365.4) rotate(-11.2) scale(1.0)"><path d="M3 -40H22Q28 -40 28 -34V-4M1 -4H34"/></g>
+<g transform="translate(334.0 376.5) rotate(-14.5) scale(1.05)"><path d="M4 -40L28 -4M27 -40Q28 -27 18 -25M10 -21L5 -4"/></g>
 </g>
 <circle cx="70" cy="344" r="38" fill="url(#p05-yglow)"/>
 <g transform="translate(50 322)">

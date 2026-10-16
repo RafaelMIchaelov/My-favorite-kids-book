@@ -221,6 +221,14 @@ body[data-view="reader"] {
 .nav-btn:disabled { opacity: 0; pointer-events: none; }
 /* In RTL the first child sits on the right: "previous" right, "next" left. */
 
+/* dark pages (night scenes) */
+.page-dark .page-text p { color: #F6EEDC; }
+.page-dark .page-art svg { box-shadow: 0 24px 50px -28px rgba(0,0,0,.6); }
+body.reader-dark .reader-close, body.reader-dark .reader-count { color: rgba(246,238,220,.75); }
+body.reader-dark .progress { background: rgba(246,238,220,.18); }
+body.reader-dark .progress span { background: #F6CD7A; }
+body.reader-dark .nav-btn { background: rgba(246,238,220,.14); color: #F6EEDC; box-shadow: none; }
+
 /* end page */
 .page-end { overflow-y: auto; touch-action: pan-y; }
 .end-inner { margin: auto 0; padding: 16px 4px 10px; text-align: center; }

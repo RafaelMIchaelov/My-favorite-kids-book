@@ -166,7 +166,7 @@
     var total = b.pages.length;
     if (n <= total) {
       var p = b.pages[n - 1];
-      return '<article class="page" style="--page-bg:' + esc(p.bg || "#FBF6EC") + '">' +
+      return '<article class="page' + (isDark(p.bg) ? " page-dark" : "") + '">' +
         '<div class="page-art" aria-hidden="true">' + p.art + "</div>" +
         '<div class="page-text"><p>' + esc(p.text).replace(/\n/g, "<br>") + "</p></div>" +
         "</article>";
@@ -186,6 +186,13 @@
           '<a class="btn btn-link" href="#/book/' + b.id + '/1">לקרוא שוב מההתחלה</a>' +
         "</div>" +
       "</div></article>";
+  }
+
+  function isDark(hex) {
+    var m = /^#?([0-9a-f]{6})$/i.exec(hex || "");
+    if (!m) return false;
+    var n = parseInt(m[1], 16), r = n >> 16, g = (n >> 8) & 255, b = n & 255;
+    return (0.299 * r + 0.587 * g + 0.114 * b) < 128;
   }
 
   // "(1) ... (2) ..." -> list of sources for parents
@@ -229,7 +236,9 @@
     app.querySelector(".reader-count").textContent = n <= total ? n + " / " + total : "סוף";
     app.querySelector(".nav-prev").disabled = false;
     app.querySelector(".nav-next").disabled = n > total;
-    document.body.style.setProperty("--reader-bg", n <= total ? (b.pages[n - 1].bg || "") : "");
+    var bg = n <= total ? (b.pages[n - 1].bg || "") : "";
+    document.body.style.setProperty("--reader-bg", bg || "var(--paper)");
+    document.body.classList.toggle("reader-dark", isDark(bg));
   }
 
   function turn(id, delta) {
@@ -334,7 +343,10 @@
 
   function route() {
     var parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
-    if (parts[0] !== "book" || !parts[2]) current = { id: null, n: 0 };
+    if (parts[0] !== "book" || !parts[2]) {
+      current = { id: null, n: 0 };
+      document.body.classList.remove("reader-dark");
+    }
     if (!parts.length) return viewLibrary();
     if (parts[0] === "about") return viewAbout();
     if (parts[0] === "book" && parts[1]) {

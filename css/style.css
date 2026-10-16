@@ -234,6 +234,13 @@ body[data-view="reader"] {
 }
 .end-questions h2 { font-family: var(--serif); font-size: 1.15rem; margin: 0 0 6px; }
 .end-questions ul { margin: 0; padding: 0 20px 0 0; font-family: var(--serif); font-size: 1.12rem; line-height: 1.8; }
+.end-sources {
+  text-align: right; max-width: 460px; margin: 0 auto 22px;
+  color: var(--ink-soft); font-size: .92rem; line-height: 1.7;
+}
+.end-sources summary { cursor: pointer; font-weight: 500; color: var(--ink); padding: 8px 0; }
+.end-sources ol { padding-right: 20px; margin: 6px 0 0; }
+.end-sources li { margin-bottom: 6px; }
 .end-actions { display: flex; flex-direction: column; align-items: center; gap: 10px; }
 .end-actions .btn-donate { min-width: 240px; }
 

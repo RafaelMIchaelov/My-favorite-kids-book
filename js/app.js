@@ -178,13 +178,23 @@
       '<div class="end-inner">' +
         '<p class="end-mark">סוֹף פֶּרֶק ' + b.chapter + "</p>" +
         '<p class="end-teaser">' + esc(b.teaser) + "</p>" +
-        (next ? '<p class="end-next">בַּפֶּרֶק הַבָּא: <strong>' + esc(next.title) + "</strong></p>" : "") +
+        (next ? '<p class="end-next">פֶּרֶק ' + (b.chapter + 1) + ": <strong>" + esc(next.title) + "</strong> · בְּקָרוֹב</p>" : "") +
         (q ? '<div class="end-questions"><h2>לְשִׂיחָה אַחֲרֵי הַקְּרִיאָה</h2><ul>' + q + "</ul></div>" : "") +
+        sourcesHtml(b.sourcesNotes) +
         '<div class="end-actions">' + donateButton() +
           '<a class="btn btn-ghost" href="#/about">לאן הולך הכסף?</a>' +
           '<a class="btn btn-link" href="#/book/' + b.id + '/1">לקרוא שוב מההתחלה</a>' +
         "</div>" +
       "</div></article>";
+  }
+
+  // "(1) ... (2) ..." -> list of sources for parents
+  function sourcesHtml(notes) {
+    if (!notes) return "";
+    var parts = notes.split(/\s*\(\d+\)\s*/);
+    var intro = parts.shift().replace(/[:：]\s*$/, "");
+    return '<details class="end-sources"><summary>' + esc(intro || "מקורות להורים") + "</summary><ol>" +
+      parts.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ol></details>";
   }
 
   function renderPage(b, n) {

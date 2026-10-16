@@ -9,6 +9,6 @@ window.LIBRARY = [
     series: "יוּד הַקְּטַנָּה",
     chapter: 1,
     status: "available",
-    src: "books/yud-bereshit/book.js"
+    src: "books/yud-bereshit/book.js?v=2"
   }
 ];

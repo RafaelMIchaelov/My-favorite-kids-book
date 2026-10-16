@@ -55,6 +55,8 @@
       '" target="_blank" rel="noopener">' + esc(SITE.donateLabel || "לתרום") + "</a>";
   }
 
+  var routeTok = 0;
+
   function setView(name, html) {
     document.body.setAttribute("data-view", name);
     app.innerHTML = html;
@@ -68,11 +70,13 @@
   // ---------- views ----------
 
   function viewLibrary() {
+    var tok = routeTok;
     document.title = SITE.name;
     var list = window.LIBRARY || [];
     Promise.all(list.map(function (e) {
       return e.status === "available" ? loadBook(e.id).catch(function () { return null; }) : null;
     })).then(function (loaded) {
+      if (tok !== routeTok) return;
       var cards = list.map(function (e, i) {
         var b = loaded[i];
         if (!b) return "";
@@ -111,7 +115,9 @@
   }
 
   function viewCover(id) {
+    var tok = routeTok;
     loadBook(id).then(function (b) {
+      if (tok !== routeTok) return;
       document.title = b.title + " · " + SITE.name;
       var last = parseInt(store("progress:" + b.id), 10);
       var cont = last > 1 && last <= b.pages.length
@@ -133,7 +139,9 @@
   }
 
   function viewReader(id, n) {
+    var tok = routeTok;
     loadBook(id).then(function (b) {
+      if (tok !== routeTok) return;
       var total = b.pages.length;
       if (n < 1) return go("#/book/" + id, true);
       if (n > total + 1) return go("#/book/" + id + "/" + (total + 1), true);
@@ -199,8 +207,8 @@
   function sourcesHtml(notes) {
     if (!notes) return "";
     var parts = notes.split(/\s*\(\d+\)\s*/);
-    var intro = parts.shift().replace(/[:：]\s*$/, "");
-    return '<details class="end-sources"><summary>' + esc(intro || "מקורות להורים") + "</summary><ol>" +
+    parts.shift();
+    return '<details class="end-sources"><summary>מקורות והערות להורים</summary><ol>' +
       parts.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ol></details>";
   }
 
@@ -210,7 +218,7 @@
     var total = b.pages.length;
     var dir = current.id === b.id && current.n ? (n > current.n ? "next" : n < current.n ? "prev" : "") : "";
     current = { id: b.id, n: n };
-    if (n <= total) store("progress:" + b.id, String(n));
+    store("progress:" + b.id, n <= total ? String(n) : "done");
 
     var old = stage.querySelector(".page:not(.leaving)");
     var tmp = document.createElement("div");
@@ -341,6 +349,7 @@
   // ---------- router ----------
 
   function route() {
+    routeTok++;
     var parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
     if (parts[0] !== "book" || !parts[2]) {
       current = { id: null, n: 0 };
@@ -349,7 +358,11 @@
     if (!parts.length) return viewLibrary();
     if (parts[0] === "about") return viewAbout();
     if (parts[0] === "book" && parts[1]) {
-      if (parts[2]) return viewReader(parts[1], parseInt(parts[2], 10) || 1);
+      if (parts[2]) {
+        var n = parseInt(parts[2], 10);
+        if (isNaN(n) || String(n) !== parts[2]) return go("#/book/" + parts[1] + "/" + (isNaN(n) ? 1 : Math.max(n, 0)), true);
+        return viewReader(parts[1], n);
+      }
       return viewCover(parts[1]);
     }
     notFound();

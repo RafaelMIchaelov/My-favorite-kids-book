@@ -35,8 +35,8 @@
   "p16": "p8xMJq1ehw"
  },
  "todo": [
-  "create panels+text for p06..p16",
-  "add 4 frame creation nodes per page panel (ids in production/ch01-higgsfield.json magnific.creations)",
+  "add 4 frame nodes to p05 panel",
+  "create panels+text for p06..p16 and their 4 frame nodes",
   "share view link",
   "update deck"
  ],
@@ -58,6 +58,37 @@
    "p04": "cebf800a-8d8b-4fa2-8dae-57ed43010da5",
    "p05": "369d7f93-bcc6-48a2-a657-b005cf750622"
   },
-  "frames": {}
+  "frames": {
+   "cover": [
+    "95f23774-6ecf-461b-9901-87cc77ab7d62",
+    "2276935f-c85e-49a4-acd3-c62482b5c544",
+    "72d63e73-2b20-4e53-b95e-2a0ab1acf737",
+    "6b63954e-0929-4831-99a1-203c9884dc24"
+   ],
+   "p01": [
+    "6ab308c9-53d2-4d45-8f6e-0a7aadab49ae",
+    "1944e696-7b59-4b42-ab34-d1ee4a939013",
+    "11644141-d008-4bb5-ae7e-b04536135765",
+    "1647be81-760c-41a3-a3bb-d121cc3e7dda"
+   ],
+   "p02": [
+    "6413bd4e-28da-4c5a-a831-dd15d234addf",
+    "be220654-7f2b-4d57-a18d-e7586a742266",
+    "09a44222-ecea-4ce7-b4ac-42c7a24516b7",
+    "95c048d0-7969-4ece-a855-e90411e878d5"
+   ],
+   "p03": [
+    "25bf8eb2-832d-4faf-95e6-5eb1dc5ef0b4",
+    "3662930f-df83-4cb4-b306-9cfbab1b25a8",
+    "2965e266-3084-42c1-ba2e-58c2613b9a91",
+    "e07c9099-06fd-4307-be18-6450a403b081"
+   ],
+   "p04": [
+    "f7c5885b-ec68-4f02-80f1-e658f325e955",
+    "cbaa69c0-af0d-4dc5-a8e3-1ef48d551f46",
+    "e23763bf-aa00-4f23-b0d1-71ac744ed770",
+    "7238256c-c6b9-4852-8692-549a16c85749"
+   ]
+  }
  }
 }

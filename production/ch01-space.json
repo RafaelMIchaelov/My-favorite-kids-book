@@ -35,8 +35,7 @@
   "p16": "p8xMJq1ehw"
  },
  "todo": [
-  "add 4 frame nodes to p05 panel",
-  "create panels+text for p06..p16 and their 4 frame nodes",
+  "create panels+text+frames for p08..p16 (payloads: scratchpad space_call_b2..b4.json; anchor first panel on previous real panel id)",
   "share view link",
   "update deck"
  ],
@@ -48,7 +47,9 @@
    "p02": "10096ae9-4403-4f25-b490-ae1ebd7a6a7b",
    "p03": "dbc0f33e-1ebd-4a8a-9a8d-12ee2d701c8a",
    "p04": "b8820843-843f-4fc0-9754-9b8f0ddd0434",
-   "p05": "2d2d8db0-45ac-489a-97a6-cf7aa5621bd7"
+   "p05": "2d2d8db0-45ac-489a-97a6-cf7aa5621bd7",
+   "p06": "219a5ff5-f886-4c2b-9b4c-00b88efecadc",
+   "p07": "9f118bf6-b9fc-47ea-a5b5-68e77971d240"
   },
   "texts": {
    "cover": "0f9df159-3a8b-42f6-a234-a0b36fe87aa5",
@@ -56,7 +57,9 @@
    "p02": "c9cef0ec-49e2-42ea-9735-6782bea34942",
    "p03": "6fb32fff-0726-4a3f-bde1-d4e5e64cc03d",
    "p04": "cebf800a-8d8b-4fa2-8dae-57ed43010da5",
-   "p05": "369d7f93-bcc6-48a2-a657-b005cf750622"
+   "p05": "369d7f93-bcc6-48a2-a657-b005cf750622",
+   "p06": "5870004b-d71f-4247-98bd-39a856d78a73",
+   "p07": "c55d4644-b8f7-4cd4-891c-3ac75389d13e"
   },
   "frames": {
    "cover": [
@@ -88,6 +91,24 @@
     "cbaa69c0-af0d-4dc5-a8e3-1ef48d551f46",
     "e23763bf-aa00-4f23-b0d1-71ac744ed770",
     "7238256c-c6b9-4852-8692-549a16c85749"
+   ],
+   "p05": [
+    "0debb3a9-c37e-4c47-9fa4-1d83a774ec25",
+    "51f15e2f-0532-4b4b-a903-d13ecff6b097",
+    "0f5548cc-05af-4486-be2a-e8321c77413a",
+    "fc177c06-ed65-4540-9566-b75276701815"
+   ],
+   "p06": [
+    "501ea916-db22-4abd-85a6-f2c45c43db14",
+    "a441adeb-c4a9-4b80-9891-72d0fe5e9518",
+    "2da799ff-a424-4cef-bcfd-172880780166",
+    "95f795a3-0629-41ff-8b81-af820b235911"
+   ],
+   "p07": [
+    "2371ae77-54b3-4e38-9e96-527265e4adbd",
+    "c1172743-2aa6-48da-a62e-a23ca2ca04d4",
+    "816651c0-24f5-426a-b594-ba94a7a61e4c",
+    "29e20a81-f753-4652-84d6-c8afe587b94b"
    ]
   }
  }

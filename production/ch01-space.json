@@ -35,9 +35,9 @@
   "p16": "p8xMJq1ehw"
  },
  "todo": [
-  "create panels+text+frames for p14..p16 (payload scratchpad space_call_b4.json, anchor on p13 panel)",
-  "gallery artifact",
-  "update deck"
+  "gallery artifact (storyboard page in Claude)",
+  "update deck with links",
+  "QA images once network opens"
  ],
  "storyboard": {
   "note": "שורה לכל עמוד: טקסט ורבדים + 4 גרסאות (A Nano Banana Pro, B Nano Banana 2.1, C GPT Image 2.5, D Seedream 5 Pro) מ-Higgsfield. הסקיצות הישנות הוסרו מהלוח (סתרו את הבריפים).",
@@ -55,7 +55,10 @@
    "p10": "38458c70-46a0-482b-9056-50bfc555ce0c",
    "p11": "ea8122ba-7606-4326-9c3c-9507711ab231",
    "p12": "44f753ef-f18a-4bbb-85d7-654246fc0678",
-   "p13": "bc4c2a38-c47b-4a72-a3ba-a32a0a824a77"
+   "p13": "bc4c2a38-c47b-4a72-a3ba-a32a0a824a77",
+   "p14": "ef9ee878-cc0b-45c2-bc8d-36af879ee099",
+   "p15": "cdcbf9ed-3793-4adf-93c9-4393bbc20478",
+   "p16": "913904fe-5195-4cd6-ba39-7c65c82a27c2"
   },
   "texts": {
    "cover": "0f9df159-3a8b-42f6-a234-a0b36fe87aa5",
@@ -71,7 +74,10 @@
    "p10": "2f7a960f-57fb-4922-b6b9-515001968f3d",
    "p11": "7149dd47-ed48-4058-82d6-ecff3158e9a6",
    "p12": "55e8cdde-7604-4783-8472-3df6be78e379",
-   "p13": "98677eba-35db-4ef6-847a-5a53387170a6"
+   "p13": "98677eba-35db-4ef6-847a-5a53387170a6",
+   "p14": "fa531cad-db97-479f-b40c-80f7869541d3",
+   "p15": "a4fa3c7d-8503-4605-b004-8a2f7948d26e",
+   "p16": "75de5c51-3c33-4efc-84f6-b38696adcc6c"
   },
   "frames": {
    "cover": [
@@ -156,6 +162,24 @@
     "707f2aec-017b-4ac9-af8d-0306138434b6",
     "22143b64-404b-4c3c-8ccc-9f74f706cd01",
     "a488037e-5956-464f-93a6-4c10702a6ae4"
+   ],
+   "p14": [
+    "363ef733-2670-47c6-9688-e135ce0851c9",
+    "62367a25-ddfe-44ff-861e-6802c1b98c7a",
+    "ab50333a-ea94-47d9-90b8-26b22d89eb0a",
+    "71f3d91b-8fb2-4754-a01b-cfa70994a789"
+   ],
+   "p15": [
+    "938841d4-7b76-45da-af78-91e24777766a",
+    "02f8ff50-0282-45cb-90e7-71dd3064621a",
+    "8f29b052-3fe0-4380-9c96-90652fb46e91",
+    "943cb577-b57e-4664-89ad-3eab8292db2d"
+   ],
+   "p16": [
+    "d16eecdd-cf03-4b70-b675-a1122b125734",
+    "df59d6fa-5d86-4189-b6dd-bcc061058045",
+    "04b0f5f5-255e-49bc-ac79-5e136d96d97c",
+    "ec574868-5f28-44b1-b6c7-ac677c5c1dcf"
    ]
   }
  }

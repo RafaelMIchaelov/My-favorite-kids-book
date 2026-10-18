@@ -35,8 +35,8 @@
   "p16": "p8xMJq1ehw"
  },
  "todo": [
-  "create panels+text+frames for p11..p16 (payloads: scratchpad space_call_b3/b4.json; anchor first panel on previous real panel id)",
-  "share view link",
+  "create panels+text+frames for p14..p16 (payload scratchpad space_call_b4.json, anchor on p13 panel)",
+  "gallery artifact",
   "update deck"
  ],
  "storyboard": {
@@ -52,7 +52,10 @@
    "p07": "9f118bf6-b9fc-47ea-a5b5-68e77971d240",
    "p08": "e596fa30-a418-4d84-801f-28a78d9fa244",
    "p09": "4d5c6d81-ea39-4b04-99a8-1b6009e0f681",
-   "p10": "38458c70-46a0-482b-9056-50bfc555ce0c"
+   "p10": "38458c70-46a0-482b-9056-50bfc555ce0c",
+   "p11": "ea8122ba-7606-4326-9c3c-9507711ab231",
+   "p12": "44f753ef-f18a-4bbb-85d7-654246fc0678",
+   "p13": "bc4c2a38-c47b-4a72-a3ba-a32a0a824a77"
   },
   "texts": {
    "cover": "0f9df159-3a8b-42f6-a234-a0b36fe87aa5",
@@ -65,7 +68,10 @@
    "p07": "c55d4644-b8f7-4cd4-891c-3ac75389d13e",
    "p08": "2f9eff77-f7b6-49bf-bef7-2c28b6c69f7e",
    "p09": "f54f0103-f243-4b44-9bd9-1d13bea6c34e",
-   "p10": "2f7a960f-57fb-4922-b6b9-515001968f3d"
+   "p10": "2f7a960f-57fb-4922-b6b9-515001968f3d",
+   "p11": "7149dd47-ed48-4058-82d6-ecff3158e9a6",
+   "p12": "55e8cdde-7604-4783-8472-3df6be78e379",
+   "p13": "98677eba-35db-4ef6-847a-5a53387170a6"
   },
   "frames": {
    "cover": [
@@ -133,6 +139,23 @@
     "40362077-5d5a-404a-a420-0b1253a79d24",
     "16598756-5686-4893-87d1-192588b17b34",
     "a751f147-d18d-4f5c-9d81-4ab873a4e10c"
+   ],
+   "p11": [
+    "0ef1d04f-122a-47f4-b10c-4418d8ad9e65",
+    "38a1b1a3-f219-4ca9-9474-1d1c48851f31",
+    "39e55ab5-b5f2-43a4-9029-a90436590e74",
+    "46103913-278d-4f05-8cf7-09383c42b1ac"
+   ],
+   "p12": [
+    "a8832204-bcad-4f80-bb35-edfce162b415",
+    "b22a86fc-c827-43b0-913c-cd7f12b44dc7",
+    "2548cba3-fde0-4f7f-97c3-351360856812"
+   ],
+   "p13": [
+    "8078efba-85aa-48e8-aafb-d412e21a17da",
+    "707f2aec-017b-4ac9-af8d-0306138434b6",
+    "22143b64-404b-4c3c-8ccc-9f74f706cd01",
+    "a488037e-5956-464f-93a6-4c10702a6ae4"
    ]
   }
  }

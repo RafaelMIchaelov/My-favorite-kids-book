@@ -1,0 +1,265 @@
+<title>סטוריבורד המילה האחרונה</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Rubik:wght@400;500;600&display=swap">
+<style>
+/* Layout: a light table for one chapter. Each book page is a row: its Hebrew line and source, four candidate frames, a pick and a note. */
+:root{
+  --paper:#FBF6EC; --sheet:#FFFFFF; --ink:#24305E; --ink-soft:#4F587C; --rule:#E4DCCB;
+  --gold:#C98A1E; --gold-ink:#7A4E05; --gold-wash:#F6E7C8; --lapis:#1F3A6E; --chip:#EFE7D6;
+  --warn:#9A3B1E; --badge-bg:#24305E; --badge-fg:#FBF6EC;
+  --display:"Frank Ruhl Libre", "David Libre", Georgia, serif;
+  --ui:"Rubik", "Assistant", "Segoe UI", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0F1529; --sheet:#171F3A; --ink:#EDE6D6; --ink-soft:#AEB4C9; --rule:#2A3354;
+  --gold:#E3AE4F; --gold-ink:#F2C66F; --gold-wash:#3A3020; --lapis:#9DB6E8; --chip:#1E2747;
+  --warn:#F0A07E; --badge-bg:#E3AE4F; --badge-fg:#1B1407; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0F1529; --sheet:#171F3A; --ink:#EDE6D6; --ink-soft:#AEB4C9; --rule:#2A3354;
+  --gold:#E3AE4F; --gold-ink:#F2C66F; --gold-wash:#3A3020; --lapis:#9DB6E8; --chip:#1E2747;
+  --warn:#F0A07E; --badge-bg:#E3AE4F; --badge-fg:#1B1407; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{direction:rtl}
+body{background:var(--paper);color:var(--ink);font-family:var(--ui);font-size:16px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+.wrap{max-width:1180px;margin:0 auto;padding-block:28px 64px;display:flex;flex-direction:column;gap:28px}
+header{display:flex;flex-direction:column;gap:10px}
+.eyebrow{font-size:13px;letter-spacing:.06em;color:var(--ink-soft)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(32px,6vw,52px);line-height:1.1;margin:0;text-wrap:balance}
+.lede{max-width:62ch;margin:0;color:var(--ink-soft)}
+.status{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font-size:14px}
+.count{font-variant-numeric:tabular-nums;background:var(--gold-wash);color:var(--gold-ink);padding:4px 12px;border-radius:999px;font-weight:600}
+.save-note{color:var(--ink-soft)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--ink-soft);margin:0;padding:0;list-style:none}
+.legend b{color:var(--ink);font-weight:600}
+nav.strip{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);padding-block:10px;border-bottom:1px solid var(--rule);
+  display:flex;gap:6px;overflow-x:auto;scrollbar-width:thin}
+nav.strip a{flex:0 0 auto;min-width:40px;text-align:center;text-decoration:none;color:var(--ink);background:var(--chip);border-radius:8px;padding:6px 10px;font-size:14px;font-variant-numeric:tabular-nums;position:relative}
+nav.strip a.done{background:var(--gold-wash);color:var(--gold-ink);font-weight:600}
+nav.strip a.done::after{content:"";position:absolute;top:4px;left:4px;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+nav.strip a:focus-visible,button:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+section.page{display:flex;flex-direction:column;gap:14px;padding-block:22px;border-bottom:1px solid var(--rule);scroll-margin-top:64px}
+.page-head{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 18px;align-items:baseline}
+.page-head>*{min-width:0;overflow-wrap:break-word}
+.pnum{font-family:var(--display);font-size:40px;line-height:1;color:var(--gold);font-variant-numeric:tabular-nums;min-width:1.4em}
+.ptext{font-family:var(--display);font-size:clamp(21px,2.6vw,27px);line-height:1.45;margin:0;max-width:40ch;text-wrap:balance}
+.ptext.empty{color:var(--ink-soft);font-style:italic;font-size:19px}
+.psrc{grid-column:2;margin:0;font-size:13px;color:var(--ink-soft);max-width:80ch}
+.rec{grid-column:2;margin:4px 0 0;font-size:14.5px;max-width:80ch}
+.rec b{color:var(--gold-ink);font-weight:600}
+.rec .alt{color:var(--ink-soft)}
+.bulk{font:inherit;font-size:13px;font-weight:600;border:1px solid var(--gold);background:transparent;color:var(--gold-ink);border-radius:999px;padding:5px 14px;cursor:pointer}
+.bulk:disabled{opacity:.5;cursor:not-allowed}
+.card{position:relative}
+.badge{position:absolute;top:8px;inset-inline-start:8px;z-index:1;pointer-events:none;background:var(--badge-bg);color:var(--badge-fg);font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px}
+.flag{margin:0;font-size:12.5px;line-height:1.4;color:var(--warn)}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{display:flex;flex-direction:column;gap:8px;min-width:0}
+.thumb{display:block;padding:0;border:0;background:var(--sheet);border-radius:10px;overflow:hidden;cursor:zoom-in;aspect-ratio:3/4;width:100%;max-width:100%;box-shadow:0 0 0 1px var(--rule)}
+.thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.card.chosen .thumb{box-shadow:0 0 0 3px var(--gold)}
+.meta{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:13px}
+.vname{color:var(--ink-soft);min-width:0}
+.vname b{color:var(--ink);font-weight:600}
+.pick{font:inherit;font-size:13px;font-weight:600;border:1px solid var(--rule);background:var(--sheet);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer;white-space:nowrap}
+.pick[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#1b1407}
+.pick:disabled{opacity:.5;cursor:not-allowed}
+.below{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px;align-items:start}
+details.layers{background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:10px 14px}
+details.layers summary{cursor:pointer;font-weight:600;font-size:14px}
+details.layers dl{margin:10px 0 2px;display:grid;grid-template-columns:auto 1fr;gap:8px 12px}
+details.layers dt{font-family:var(--display);font-weight:700;color:var(--gold-ink)}
+details.layers dd{margin:0;font-size:14.5px;max-width:70ch}
+.note label{display:block;font-size:13px;color:var(--ink-soft);margin-bottom:4px}
+.note textarea{width:100%;min-height:76px;resize:vertical;font:inherit;font-size:14.5px;color:var(--ink);background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:8px 10px}
+.note .saved{font-size:12px;color:var(--ink-soft);min-height:1.2em;margin-top:2px}
+footer{font-size:14px;color:var(--ink-soft);display:flex;flex-direction:column;gap:6px}
+footer a{color:var(--lapis)}
+.lightbox{position:fixed;inset:0;z-index:20;background:rgba(8,11,24,.92);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
+  padding:calc(12px + env(safe-area-inset-top,0px)) max(12px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+.lightbox img{max-height:calc(100% - 70px);max-width:100%;object-fit:contain;border-radius:8px}
+.lb-bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;color:#EDE6D6;font-size:14px}
+.lb-bar button{font:inherit;font-size:14px;background:#252E52;color:#EDE6D6;border:1px solid #3A4570;border-radius:999px;padding:7px 14px;cursor:pointer}
+.lb-bar .pick[aria-pressed="true"]{background:#E3AE4F;color:#1b1407;border-color:#E3AE4F}
+@media (max-width:820px){.grid,.grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}.below{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.page-head{gap:6px 12px}.pnum{font-size:30px;min-width:1.2em}}
+@media (prefers-reduced-motion:no-preference){.thumb img{transition:transform .25s ease}.thumb:hover img{transform:scale(1.02)}}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">יוד הקטנה · פרק 1 · סטוריבורד לבחירה</span>
+    <h1>הַמִּלָּה הָאַחֲרוֹנָה</h1>
+    <p class="lede">לכל עמוד יש כאן 4 גרסאות של התמונה, מ-4 מודלים שונים. לחצו על תמונה כדי לראות אותה בגדול, ועל "זו" כדי לבחור את הגרסה שאתם אוהבים. אפשר גם לכתוב הערה לכל עמוד. הבחירות וההערות נשמרות, ואני קורא אותן משם.</p>
+    <p class="lede">בכל עמוד סימנתי את ההמלצה שלי, וליד תמונה שיש בה בעיה כתבתי מה הבעיה. ההחלטה שלכם.</p>
+    <div class="status"><span class="count" id="count">נבחרו 0 מתוך 17</span><button type="button" class="bulk" id="acceptRecs">לבחור את ההמלצות שלי בעמודים שעוד לא בחרתם</button><span class="save-note" id="saveNote">טוען בחירות…</span></div>
+    <ul class="legend"><li><b>A</b> · Nano Banana Pro</li><li><b>B</b> · Nano Banana 2.1</li><li><b>C</b> · GPT Image 2.5</li><li><b>D</b> · Seedream 5 Pro</li></ul>
+  </header>
+  <nav class="strip" id="strip" aria-label="מעבר לעמוד"></nav>
+  <main id="pages"></main>
+  <footer>
+    <span>התמונות הן טיוטות ראשונות לסטוריבורד. ספירות מדויקות (כמו 24 רחובות או 15 ניצנים) יתווספו בשכבה גרפית נפרדת, ועמוד 12 ייבנה גרפית עם האותיות האמיתיות.</span>
+    <span>הלוח המלא ב-Magnific, עם כל השלבים: <a href="https://www.magnific.com/app/spaces/a2fe83ba-57c9-413c-b7d1-be11aebdc610" target="_blank" rel="noopener">לוח הסטוריבורד</a></span>
+  </footer>
+</div>
+
+<div class="lightbox" id="lb" hidden role="dialog" aria-modal="true" aria-label="תצוגה גדולה">
+  <img id="lbImg" alt="">
+  <div class="lb-bar">
+    <button type="button" id="lbPrev">הקודמת</button>
+    <span id="lbLabel"></span>
+    <button type="button" class="pick" id="lbPick" aria-pressed="false">זו</button>
+    <button type="button" id="lbNext">הבאה</button>
+    <button type="button" id="lbClose">סגירה</button>
+  </div>
+</div>
+
+<script>
+const PAGES = [{"id": "cover", "label": "כריכה", "num": "", "text": "הַמִּלָּה הָאַחֲרוֹנָה", "sub": "יוּד הַקְּטַנָּה וְהַקְּרִיאָה שֶׁל כּוֹרֶשׁ מֶלֶךְ פָּרַס", "source": "", "layers": [], "v": ["A", "B", "C", "D"], "rec": "A", "why": "יוד גדולה ושמחה במרכז, השיירה יוצאת לאורך חומת בבל, והשמיים הכהים פנויים לשם הספר.", "alt": "C יפהפייה, אבל יוד קטנה מדי בשביל כריכה.", "flags": {}}, {"id": "p01", "label": "עמוד 1", "num": "1", "text": "בַּמִּלָּה הָאַחֲרוֹנָה שֶׁל הַתַּנַ״ךְ גָּרָה יוּד, הָאוֹת הַכִּי קְטַנָּה וְהַכִּי בַּסּוֹף.", "sub": "", "source": "דברי הימים ב לו, כג (המילה האחרונה: \"וְיָעַל\"); סדר הספרים: בבא בתרא יד ע\"ב", "layers": [["פשט", "המגילה היא עיר ישנה של שורות. בקצה הרחוב האחרון, למטה משמאל, דולק חלון אחד בגודל של מילה: וְיָעַל. יוד בתוכו."], ["רמז", "24 רחובות, כמו 24 ספרי התנ״ך: 5 בתורה, 8 בנביאים ו-11 בכתובים. זה גם מספר הפרקים בסדרה. החלון של יוד נמצא בקצה הרחוב ה-24, הספר האחרון."], ["דרש", "נוצה שחורה וקטנה של עורב. המדרש אומר: אם כל באי העולם יתאספו להלבין כנף אחת של עורב, הם לא יוכלו. וכך, אם יתאספו לעקור יוד אחת מן התורה, האות הקטנה מכולן, גם זה לא יצליח. יוד במקום שלה, ואף אחד לא יזיז אותה משם."], ["סוד", "בתחילת הרחוב הראשון, למעלה מימין, מהבהבת גחלת זעירה, כי גם במילה הראשונה בתנ״ך, בְּרֵאשִׁית, יש יוד. האור שבסוף קשור לאור שבהתחלה, “כשלהבת קשורה בגחלת”. יוד עוד לא יודעת, אבל ההתחלה כבר דולקת."]], "v": ["A", "B", "C", "D"], "rec": "A", "why": "המגילה נראית כמו עיר שהשורות שלה הן רחובות, ויוד יושבת בחלון מואר בסוף השורה האחרונה. מבינים מיד.", "alt": "", "flags": {}}, {"id": "p02", "label": "עמוד 2", "num": "2", "text": "\"עַל נַהֲרוֹת בָּבֶל, שָׁם יָשַׁבְנוּ, גַּם בָּכִינוּ, בְּזָכְרֵנוּ אֶת צִיּוֹן.\"", "sub": "", "source": "תהילים קלז, א (ציטוט מדויק)", "layers": [["פשט", "לילה. גולים יושבים בשורה על גדת תעלה, ראשיהם מורכנים ופניהם שמאלה, אל ציון. מעבר למים חומת לבנים כחולה וסגורה. יוד על ענף צפצפה."], ["רמז", "שבעים נצנוצים קטנים על המים. האות ע׳ במילה וְיָעַל שווה 70, וזה מספר השנים שנקצב לבבל: “לְפִי מְלֹאת לְבָבֶל שִׁבְעִים שָׁנָה”. המספר שוכב על המים של בבל ומחכה שיתמלא."], ["דרש", "בית קטן ונמוך בקצה השורה, ובו פתח אחד מואר באור חם. על הפסוק “וָאֱהִי לָהֶם לְמִקְדָּשׁ מְעַט” אמרו חז״ל: אלו בתי הכנסת ובתי המדרש שבבבל. גם רחוק מהבית היה להם מקום קטן של אור. ובאותו עמוד בגמרא: “גלו לבבל, שכינה עמהן”."]], "v": ["A", "B", "C", "D"], "rec": "B", "why": "הגולים יושבים בשורה על שפת הנהר, יוד עצובה על ענף הערבה, ויש הרבה שקט כחול מסביב.", "alt": "ב-A יוד עצובה וברורה, אבל הירח מופיע רק בתוך המים.", "flags": {}}, {"id": "p03", "label": "עמוד 3", "num": "3", "text": "שָׁנִים רַבּוֹת שָׁתְקוּ הַכִּנּוֹרוֹת עַל הָעֲרָבִים. וְיוּד חִכְּתָה.", "sub": "", "source": "תהילים קלז, ב (\"עַל עֲרָבִים בְּתוֹכָהּ תָּלִינוּ כִּנֹּרוֹתֵינוּ\"). \"שָׁנִים רַבּוֹת\" ולא שבעים: שבעים השנה הן מניין הנבואה (ירמיהו כט, י; דברי הימים ב לו, כא), ראו הערה 3", "layers": [["פשט", "תקריב: שלושה כינורות עתיקים תלויים שותקים על ענף אלכסוני, המיתרים רפויים ומאובקים. יוד יושבת על אחד מהם ומחכה."], ["דרש", "ספרו את המיתרים: 7, 8 ו-10. הגמרא אומרת שלכינור של המקדש היו שבעה מיתרים, לכינור של ימות המשיח יהיו שמונה, ולכינור של העולם הבא עשרה. יוד יושבת על הכינור בן עשרת המיתרים, כי י׳ שווה 10, ובגמרא גם נאמר ש“העולם הבא נברא ביו״ד”. הכינורות שותקים עכשיו, אבל העתיד כבר תלוי על הענף."]], "v": ["A", "B", "C", "D"], "rec": "C", "why": "הכינורות תלויים על הענף ויוד יושבת על האמצעי. החצי התחתון נשאר כחול ונקי לטקסט.", "alt": "", "flags": {"D": "דמויות בגלימות תלויות מתחת לכינורות."}}, {"id": "p04", "label": "עמוד 4", "num": "4", "text": "", "sub": "עמוד בלי מילים", "source": "עזרא א, א; דברי הימים ב לו, כב (\"הֵעִיר ה׳\"): רמז חזותי בלבד, בלי ציור של הקב\"ה", "layers": [["פשט", "בלי מילים: סרט זהב אחד של רוח לילה עובר מימין לשמאל. רואים את הרוח רק במה שהיא מכופפת: עלים, להבת נר, יריעת אוהל ומיתר אחד. יוד מתעוררת על הכינור שמתנדנד."], ["דרש", "רוח לילה שמנגנת בכינור מעצמה. כך מספרת הגמרא על דוד: מעל מיטתו היה תלוי כינור. בחצות הלילה באה רוח צפונית ונשבה בו, והכינור ניגן מאליו. דוד היה קם ולומד עד עלות השחר. גם כאן הרוח מנגנת, ומי שמתעוררת היא יוד."]], "v": ["A", "B", "C", "D"], "rec": "A", "why": "יוד מציצה מבין המיתרים של כינור גדול, ורוח לבנה עוברת מעל המחנה. רמז ל\"הֵעִיר ה׳\" בלי לצייר את ה׳.", "alt": "", "flags": {"B": "המודל הפך את הכינור לנדנדה.", "D": "עמוסה מדי, יוד הולכת לאיבוד."}}, {"id": "p05", "label": "עמוד 5", "num": "5", "text": "הֵעִיר ה׳ אֶת רוּחַ כּוֹרֶשׁ מֶלֶךְ פָּרַס.", "sub": "", "source": "דברי הימים ב לו, כב; עזרא א, א (ציטוט מדויק)", "layers": [["פשט", "חזית ארמון בהירה בסגנון פסרגדאי. כל החלונות חשוכים חוץ מפתח גבוה אחד מוזהב. סרט הזהב זורם לתוכו, ויוד אוחזת בו בזנב ובוחרת להמשיך איתו."], ["רמז", "בתחתית התמונה, לרגלי הארמון, מציץ גן עם ארבע תעלות מים שנפגשות באמצע. המילה פַּרְדֵּס קשורה למילה הפרסית העתיקה לגן מוקף חומה, ובתנ״ך היא מופיעה בשיר השירים ד, יג, בקהלת ב, ה ובנחמיה ב, ח (“שֹׁמֵר הַפַּרְדֵּס אֲשֶׁר לַמֶּלֶךְ”). ארבע התעלות הן ארבע השכבות של הספר: פשט, רמז, דרש וסוד."], ["סוד", "הרוח באה מלמעלה ומזמינה, ויוד בוחרת להיאחז בה. במקום שבו הזנב שלה נכרך סביב הסרט, הזהב מתחזק: שם נפגשת ההתעוררות שבאה מלמעלה עם הבחירה שבאה מלמטה. גם הפשט אומר זאת. אותה מילה, “הֵעִיר”, נאמרת על כורש (עזרא א, א) ועל העם: “לְכֹל הֵעִיר הָאֱלֹהִים אֶת רוּחוֹ לַעֲלוֹת” (עזרא א, ה). אבל לעלות, כל אחד צריך בעצמו."]], "v": ["A", "B", "C", "D"], "rec": "A", "why": "ארמון פרסי עם גן מרובע, ורצועת זהב (הרוח) עוברת בדלת המוארת. יוד נחושה ונאחזת בה.", "alt": "B נקייה יותר, אם רוצים פחות פרטים.", "flags": {"C": "נראה כמו מקדש יווני, ויוד קטנה.", "D": "דמות זרה עפה יחד עם הרצועה."}}, {"id": "p06", "label": "עמוד 6", "num": "6", "text": "\"מִי בָכֶם מִכָּל עַמּוֹ, ה׳ אֱלֹהָיו עִמּוֹ, וְיָעַל!\"", "sub": "", "source": "דברי הימים ב לו, כג: סוף הפסוק כלשונו, סוף התנ\"ך. הכרוז: \"וַיַּעֲבֶר קוֹל בְּכָל מַלְכוּתוֹ וְגַם בְּמִכְתָּב\" (לו, כב)", "layers": [["פשט", "שחר. כרוז פרסי קטן עומד על מדרגה ליד חומת לבנים מזוגגות, ובידו מגילה פתוחה בלי כתב. קשתות קול זהובות רצות לאורך רצועות העיטור אל יוד, שיושבת בראש החומה."], ["רמז", "שלוש קשתות קול שוות בדיוק. בסוף הפסוק האחרון יש שלוש מילים עם אותו ערך מספרי: עַמּוֹ 116, עִמּוֹ 116 ווְיָעַל 116. העם, האלוהים שעמו והעלייה, כולם באותו מספר."]], "v": ["A", "B", "C", "D"], "rec": "A", "why": "הכרוז קורא מהמגילה, והמילה עפה למעלה אל יוד שעל החומה. רואים את הקשר ביניהם.", "alt": "ב-D יוד הכי גדולה.", "flags": {}}, {"id": "p07", "label": "עמוד 7", "num": "7", "text": "וְיָעַל?! יוּד קָפְצָה. \"זֹאת הַמִּלָּה שֶׁלִּי!\"", "sub": "", "source": "דברי הימים ב לו, כג; עזרא א, ג (\"וְיַעַל לִירוּשָׁלַיִם\")", "layers": [["פשט", "תקריב על שדה זהב: יוד באמצע קפיצה של שמחה, וקשתות הקול מסתלסלות סביבה כמו סרטים. הרחק למטה, קו של גבעות ושביל שעולה שמאלה."], ["רמז", "סביב יוד מסתלסלות בדיוק עשר קשתות קול. י׳ שווה 10, והעולם נברא בעשרה מאמרות. הגמרא מוסיפה ש“בְּרֵאשִׁית” עצמה נחשבת מאמר. כלומר, הראשון מבין עשרת המאמרות הוא בדיוק המקום שאליו יוד תגיע בסוף הסדרה."], ["דרש", "בראש השביל, על הגבעה הרחוקה, מונחת אבן בנייה אחת ומחכה. חז״ל אמרו שהקב״ה “קובל” על כורש: הנביא אמר עליו “הוּא יִבְנֶה”, וכורש אמר רק “וְיָעַל”, כלומר מי שרוצה, שיעלה. הוא לא בנה בעצמו, אלא השאיר את הבנייה למי שעולה. זו המילה שיוד כל כך שמחה בה: מילה שמזמינה כל אחד לבוא ולבנות."], ["סוד", "כל עשר הקשתות יוצאות מנקודה אחת: נקודת האור הלבנה שמעל יוד. היוד היא הנקודה הראשונה. כל אות נכתבת מנקודה, ובקבלה י׳ היא החכמה, הנקודה שממנה הכול מתפשט. מנקודה אחת יוצאות עשר."]], "v": ["A", "B", "C", "D"], "rec": "B", "why": "יוד גדולה וקופצת משמחה על רקע זהב נקי, ונשאר הרבה מקום לטקסט.", "alt": "", "flags": {"D": "ליוד יש גלימה, וזה נוגד את הכלל שאין לה בגדים."}}, {"id": "p08", "label": "עמוד 8", "num": "8", "text": "אָרְזוּ צְרוֹרוֹת לִירוּשָׁלַיִם. הַשְּׁכֵנִים נָתְנוּ כֶּסֶף וְזָהָב. הַגָּמָל, כְּמוֹ כָּל גָּמָל, רָטַן.", "sub": "", "source": "עזרא א, ד; א, ו (השכנים נותנים כסף, זהב, רכוש ובהמה). הגמל הרוטן ספרותי", "layers": [["פשט", "חצר אריזה בבוקר: גמל גדול רוטן כורע בקדמת התמונה. סבתא ואב אורזים צרורות, ושני שכנים בגלימות בבליות מגישים קערת כסף וכד זהב. יוד צוחקת על הצרור הגבוה."], ["רמז", "אותה רוח זהב מעמודים 4–5 מרימה ציצית אחת ברתמה של הגמל. בפשט אותה מילה נאמרת פעמיים: ה׳ “הֵעִיר” את רוח כורש (עזרא א, א), וגם את רוחם של העולים, “לְכֹל הֵעִיר הָאֱלֹהִים אֶת רוּחוֹ לַעֲלוֹת” (עזרא א, ה). הגמל אולי רוטן, אבל הרוח כבר כאן."], ["דרש", "ליד הרגליים של אחד השכנים מונח צרור קטן וקשור. אולי גם הוא מצטרף? המשנה מונה גרים בין אלה שעלו מבבל. הגמרא אומרת שהגלות הייתה כדי “שיתוספו עליהם גרים”, כמו מי שזורע מעט כדי לקצור הרבה."]], "v": ["A", "B", "C", "D"], "rec": "A", "why": "השכנים מושיטים צרורות, הגמל רובץ ויוד מצחקקת על הערימה. החלק העליון נקי לטקסט.", "alt": "C עשירה יותר בפרטים.", "flags": {}}, {"id": "p09", "label": "עמוד 9", "num": "9", "text": "גַּם כְּלֵי בֵּית ה׳ חוֹזְרִים הַבַּיְתָה. יוּד הֵצִיצָה מִתּוֹךְ קְעָרָה.", "sub": "", "source": "עזרא א, ז–יא (כורש מוציא את הכלים, ומתרדת הגזבר סופר אותם לששבצר). פשט, בלי מספר כלים. ההצצה של יוד ספרותית", "layers": [["פשט", "תקריב: שתי ידיים, אחת בשרוול פרסי מקופל ואחת בשרוול יהודי פשוט, מעבירות קערת זהב אחת מסף האוצר החשוך אל אור היום. יוד מציצה מעל השפה."], ["רמז", "על שפת הקערה יש 30 נקודות קטנות. ברשימת הכלים בעזרא מופיעים בדיוק “כְּפוֹרֵי זָהָב שְׁלֹשִׁים”, שלושים קערות זהב, והקערה של יוד היא אחת מהן. 30 הוא גם ל׳, האות האחרונה של וְיָעַל ושל התנ״ך כולו. בעמוד הבא המספר יחזור."]], "v": ["A", "B", "C", "D"], "rec": "C", "why": "הקערה במרכז ויוד מציצה מעל השפה שלה. הכי פשוטה והכי מצחיקה.", "alt": "", "flags": {}}, {"id": "p10", "label": "עמוד 10", "num": "10", "text": "חֲמוֹרִים: שֵׁשֶׁת אֲלָפִים שְׁבַע מֵאוֹת וְעֶשְׂרִים! יוּד הִתְבַּלְבְּלָה בַּחֲמוֹר הַשְּׁלֹשִׁים.", "sub": "", "source": "עזרא ב, סז (\"חֲמֹרִים שֵׁשֶׁת אֲלָפִים שְׁבַע מֵאוֹת וְעֶשְׂרִים\"); המקבילה בנחמיה ז, סח (לאמת)", "layers": [["פשט", "קנה מידה קומי: שורות זיגזג אינסופיות של חמורים זהים צועדות שמאלה עד האופק. יוד יושבת על סלע בקדמת התמונה, והעיניים שלה מסתחררות."], ["רמז", "יוד התבלבלה בחמור השלושים, והחמור השלושים באמת מסובב את הראש ומסתכל עליה. 30 הוא ל׳, האות האחרונה של התנ״ך. יוד נתקעה בדיוק בסוף, אז אין פלא שבעוד רגע היא תרצה לחזור להתחלה."]], "v": ["A", "B", "C", "D"], "rec": "B", "why": "הכי הרבה חמורים בשורות מסודרות, אז רואים שזה מספר עצום. יוד מסוחררת וברורה.", "alt": "", "flags": {}}, {"id": "p11", "label": "עמוד 11", "num": "11", "text": "יַלְדָּה קְטַנָּה שָׁאֲלָה: \"גַּם אֲנִי? אֲנִי עוֹד קְטַנָּה.\" \"גַּם אַתְּ.\"", "sub": "", "source": "דברי הימים ב לו, כג (\"מִי בָכֶם מִכָּל עַמּוֹ\": ההזמנה לכל אחד). הדו-שיח ספרותי", "layers": [["פשט", "בגובה העיניים של ילדה: יער של רגלי חמורים ושולי גלימות עובר שמאלה. באמצע עומדת ילדה קטנה עם צרור, ומלמעלה מושטת אליה היד הפתוחה של אמא. יוד יושבת על הצרור."], ["רמז", "התשובה לשאלה של הילדה כבר כתובה בפסוק: מִי = 50 (מ׳ 40, י׳ 10), וכָּל = 50 (כ׳ 20, ל׳ 30). מי ששואל “מי? גם אני?” שווה בדיוק ל“כל”. לכן בשולי השמלה של הילדה יש אותה רצועה ארוגה שיש על השרוול של אמא, רק קטנה יותר."], ["דרש", "מהקשר של הצרור מציץ ענף ערבה קטן מנהרות בבל. המדרש אומר שהערבה היא היחידה מארבעת המינים שאין בה לא טעם ולא ריח, ובכל זאת אוגדים אותה יחד עם כולם, “אגודה אחת”. גם הקטנה ביותר שייכת."]], "v": ["A", "B", "C", "D"], "rec": "B", "why": "רק הילדה, יוד על הצרור שלה, ויד גדולה שמזמינה אותה לבוא. שקט ומרגש.", "alt": "A מראה גם את החמורים ואת המשפחה.", "flags": {}}, {"id": "p12", "label": "עמוד 12", "num": "12", "text": "בְּלִי יוּד — \"וְעַל\". עִם יוּד — \"וְיָעַל\": מִישֶׁהוּ עוֹלֶה!", "sub": "", "source": "דברי הימים ב לו, כג. משחק לשון של המחבר, לא מדרש: \"וְיָעַל\" = שֶׁיַּעֲלֶה", "layers": [["פשט", "עמוד גרפי בשני חצאים. מימין, בוורוד מאובק: שלוש משבצות ורווח, “וְעַל”, בלי יוד. משמאל, בזהב חם: ארבע משבצות, ויוד במשבצת השנייה מימין, “וְיָעַל”. מישהו עולה!"], ["רמז", "ההתחלה והסוף כמו בראי. במילה האחרונה בתנ״ך, וְיָעַל, היוד היא האות השנייה מההתחלה. במילה הראשונה, בְּרֵאשִׁית, היא האות השנייה מהסוף. אותו מקום, רק הפוך."], ["דרש", "על רכס הדיונה הרחוק, בצד הזהב, עומד כינור זעיר עם מיתרים מתוחים. חז״ל דרשו את היוד של העתיד: כתוב “אָז יָשִׁיר מֹשֶׁה” ולא “שר”, ומכאן למדו הבטחה לעתיד, תחיית המתים מן התורה. היוד הופכת את מה שהיה למה שעוד יהיה. כך גם וְיָעַל: לא “עלה” אלא “שיעלה”. והכינורות השותקים מעמוד 3 עוד ישירו."]], "v": ["A", "B", "C"], "rec": "C", "why": "זה רקע בלבד: שתי המילים ייכתבו עליו גרפית, באותיות אמיתיות. C הכי חם ונקי.", "alt": "", "flags": {}}, {"id": "p13", "label": "עמוד 13", "num": "13", "text": "הַשַּׁיָּרָה עָלְתָה קָדִימָה. יוּד הִסְתַּכְּלָה אָחוֹרָה: \"אִם אֲנִי בַּסּוֹף... מָה יֵשׁ בַּהַתְחָלָה?\"", "sub": "", "source": "עזרא ב, א (\"הָעֹלִים מִשְּׁבִי הַגּוֹלָה\"); עזרא א, יא (\"עִם הֵעָלוֹת הַגּוֹלָה מִבָּבֶל לִירוּשָׁלָםִ\"). שאלת יוד: רעיון הסדרה", "layers": [["פשט", "שקיעה רחבה: השיירה כולה מתפתלת שמאלה על הדיונות. לבד על רכס, למטה מימין, יוד פונה לצד השני, אל זוהר רחוק באופק הימני."], ["רמז", "נקודת האור יושבת בדיוק בתוך קשת הדקלים שבאופק המזרחי. בעברית, קֶדֶם הוא גם מזרח וגם “לפני הכול”. על “וַיִּטַּע ה׳ אֱלֹהִים גַּן בְּעֵדֶן מִקֶּדֶם” רש״י מפרש “במזרחו של עדן”, ואונקלוס מתרגם “מִלְּקַדְמִין”, מלפנים. כשיוד מביטה מזרחה, היא מביטה אל ההתחלה."], ["סוד", "בפעם הראשונה נקודת האור רחוקה, והיא הקטנה והנקייה ביותר בספר: נקודה כמעט בלי גודל, שמחכה בהתחלה. בזוהר, בתחילת הבריאה יש “נקודה חדא עלאה”, נקודה עליונה אחת שממנה מתחיל הכול, “ועל דא אקרי ראשית”. מה שיש בהתחלה הוא נקודה של אור, ויוד עוד תגלה שזו היא עצמה."]], "v": ["A", "B", "C", "D"], "rec": "B", "why": "השיירה עולה על הדיונה אל העומק, ויוד גדולה ומביטה אלינו. נקי, עם שמיים פנויים.", "alt": "", "flags": {"A": "עשירה ויפה, אבל ליוד יצא זנב מסולסל.", "D": "אפרורית, והמרקם לא בסגנון של הספר."}}, {"id": "p14", "label": "עמוד 14", "num": "14", "text": "\"אֲנִי אֶעֱלֶה,\" אָמְרָה יוּד, \"אֲבָל אָחוֹרָה — עַד הַהַתְחָלָה!\"", "sub": "", "source": "משחק על \"וְיָעַל\" (דברי הימים ב לו, כג). החלטת יוד ספרותית", "layers": [["פשט", "אור ראשון: יוד זקופה ונחושה פונה אל הקצה הימני, ומנופפת בזנבה לשלום לנקודות השיירה הרחוקות משמאל. הצל שלה נמתח ארוך שמאלה."], ["רמז", "יוד יוצאת מהאות האחרונה של התנ״ך אל האות הראשונה שלו: מל׳ של וְיָעַל אל ב׳ של בְּרֵאשִׁית. יחד ל׳ וב׳ הן לֵב. מסע אחורה, מהסוף להתחלה, הוא מסע של הלב."], ["דרש", "כוכב השחר הוא הנקודה האחרונה שנשארה בשמיים. הגמרא שואלת: “למה נמשלה אסתר לשחר?”, ועונה: “מה שחר סוף כל הלילה, אף אסתר סוף כל הנסים”. האור שמסיים את הלילה הוא גם האור שפותח את היום. ובמסע אחורה, אסתר מחכה בפרק 4."]], "v": ["A", "B", "C", "D"], "rec": "A", "why": "יוד נחושה, והצל הארוך שלה נמתח אחורה. השיירה קטנה באופק.", "alt": "", "flags": {"C": "ליוד יש שמלה, וזה נוגד את הכלל.", "D": "ליוד יש גלימה והיא ענקית, וזה נוגד את הכלל."}}, {"id": "p15", "label": "עמוד 15", "num": "15", "text": "בֵּין הַשּׁוּרוֹת הִבְהֵב חוּט זָהָב. יוּד אָחֲזָה בּוֹ בַּזָּנָב — וְטִפְּסָה.", "sub": "", "source": "חוט הזהב: אמצעי המסע של הסדרה (ספרותי, אין לו מקור)", "layers": [["פשט", "הדיונות הופכות לשורות של המגילה הגדולה, וחוט זהב דק מתפתל ביניהן למעלה וימינה. יוד אוחזת בו בזנבה המסולסל ומטפסת, שמחה."], ["רמז", "לאורך החוט יש בדיוק 15 ניצני לוטוס, כמו 15 מזמורי “שִׁיר הַמַּעֲלוֹת” בתהילים (קכ–קלד), שכנגדם היו 15 מדרגות במקדש. מַעֲלוֹת ווְיָעַל באים מאותו שורש, ע-ל-ה. ביניהם גם “שִׁיר הַמַּעֲלוֹת בְּשׁוּב ה׳ אֶת שִׁיבַת צִיּוֹן הָיִינוּ כְּחֹלְמִים” (תהילים קכו, א). וזה עמוד 15."], ["סוד", "מתוך 15 הניצנים, 5 נמצאים מאחורי יוד, בחלק שכבר טיפסה, ו-10 לפניה. ה׳ היא 5 וי׳ היא 10, ויחד הן יָהּ. “כִּי בְּיָהּ ה׳ צוּר עוֹלָמִים”: העולם הזה נברא בה״א, והעולם הבא ביו״ד. יוד מטפסת מן הה״א אל היו״ד, ומה שמחכה לה בסוף הדרך, בהתחלה, הוא יוד."]], "v": ["A", "B", "C", "D"], "rec": "B", "why": "השורות הן פסים צבעוניים עם קווקווים כמו כתב, ויוד שמחה ונאחזת בחוט הזהב.", "alt": "", "flags": {"A": "יפה מאוד, אבל ליוד יצא גוף עם ידיים.", "D": "יש בה סימנים שנראים כמו אותיות, ודמויות של אנשים."}}, {"id": "p16", "label": "עמוד 16", "num": "16", "text": "טַק... טַק... טַק... מִי בּוֹנֶה שָׁם?", "sub": "", "source": "רמז לפרק 2: \"לְכוּ וְנִבְנֶה אֶת חוֹמַת יְרוּשָׁלַיִם\" (נחמיה ב, יז). החומה שייכת לימי נחמיה (כ-445 לפנה\"ס), לא לשיירה של 538", "layers": [["פשט", "שחר מוזהב: פינה של חומת אבן ירושלמית בהירה ושבורה ממלאת את השליש הימני של התמונה. חוט הזהב נכנס לתוכה, ויוד מביטה אלינו בסקרנות. מאחורי החומה מישהו בונה: טק, טק, טק."], ["רמז", "הפרצה בחומה היא בדיוק בצורת יוד. וגם בכתיב חסרה לירושלים יוד: כמעט בכל התנ״ך, וגם בפסוק האחרון שלו (“לִבְנוֹת לוֹ בַיִת בִּירוּשָׁלַםִ”), השם נכתב ירושלם, בלי יוד, ונקרא יְרוּשָׁלַיִם. העיר מחכה ליוד שלה."], ["דרש", "אור עובר דרך הפרצה הקטנה, ועל האדמה שלפני החומה הוא נפרש לשער רחב וגבוה. המדרש אומר: “פתחו לי פתח אחד... כחודה של מחט, ואני פותח לכם פתחים שיהיו עגלות וקרוניות נכנסות בו”. פתח קטן כמו יוד, ומעבר לו דרך רחבה לכולם."]], "v": ["A", "B", "C", "D"], "rec": "B", "why": "יוד ליד חומה עם פתח מואר, אבק עף מלמעלה (טק, טק), וחוט זהב מוביל פנימה.", "alt": "", "flags": {"A": "ליוד יצא גוף של חתול.", "D": "נקייה ויפה, אבל ליוד יצא זנב ארוך ומסולסל."}}];
+const MODELS = {A:"Nano Banana Pro",B:"Nano Banana 2.1",C:"GPT Image 2.5",D:"Seedream 5 Pro"};
+const picks = {}; const notes = {};
+let db = null, canWrite = true, useLocal = false;
+
+function el(tag, attrs, ...kids){const e=document.createElement(tag);for(const k in attrs||{}){if(k==="class")e.className=attrs[k];else if(k==="text")e.textContent=attrs[k];else e.setAttribute(k,attrs[k]);}for(const c of kids){if(c!=null)e.append(c);}return e;}
+function thumbSrc(p,v){return `frames/thumb/${p}_${v}.jpg`;}
+function fullSrc(p,v){return `frames/full/${p}_${v}.webp`;}
+
+function buildStrip(){
+  const strip=document.getElementById("strip");
+  for(const p of PAGES){strip.append(el("a",{href:"#"+p.id,id:"nav-"+p.id,text:p.num||"כריכה"}));}
+}
+function buildPages(){
+  const main=document.getElementById("pages");
+  for(const p of PAGES){
+    const sec=el("section",{class:"page",id:p.id,"aria-label":p.label});
+    const head=el("div",{class:"page-head"});
+    head.append(el("span",{class:"pnum",text:p.num||"✦"}));
+    const t=el("p",{class:"ptext"+(p.text?"":" empty"),text:p.text||p.sub});
+    head.append(t);
+    if(p.id==="cover"&&p.sub){head.append(el("p",{class:"psrc",text:p.sub}));}
+    if(p.source){head.append(el("p",{class:"psrc",text:"מקור: "+p.source}));}
+    if(p.rec){const r=el("p",{class:"rec"}); r.append(el("b",{text:`ההמלצה שלי: ${p.rec}.`})," "+p.why); if(p.alt) r.append(" ",el("span",{class:"alt",text:p.alt})); head.append(r);}
+    sec.append(head);
+    const grid=el("div",{class:"grid"+(p.v.length===3?" three":"")});
+    for(const v of p.v){
+      const card=el("div",{class:"card",id:`card-${p.id}-${v}`});
+      const btn=el("button",{type:"button",class:"thumb","aria-label":`${p.label}, גרסה ${v}, תצוגה גדולה`});
+      const img=el("img",{src:thumbSrc(p.id,v),alt:`${p.label}, גרסה ${v} (${MODELS[v]})`,loading:"lazy",decoding:"async",width:"480",height:"643"});
+      btn.append(img); btn.addEventListener("click",()=>openLb(p.id,v));
+      const meta=el("div",{class:"meta"});
+      const name=el("span",{class:"vname"}); name.append(el("b",{text:v}), " · "+MODELS[v]);
+      const pick=el("button",{type:"button",class:"pick",id:`pick-${p.id}-${v}`,"aria-pressed":"false",text:"זו"});
+      pick.addEventListener("click",()=>choose(p.id,v));
+      meta.append(name,pick);
+      if(p.rec===v) card.append(el("span",{class:"badge",text:"ההמלצה שלי"}));
+      card.append(btn,meta);
+      if(p.flags&&p.flags[v]) card.append(el("p",{class:"flag",text:"לא מומלץ: "+p.flags[v]}));
+      grid.append(card);
+    }
+    sec.append(grid);
+    const below=el("div",{class:"below"});
+    if(p.layers.length){
+      const det=el("details",{class:"layers"}); det.append(el("summary",{text:"הרבדים הנסתרים בעמוד (פשט, רמז, דרש, סוד)"}));
+      const dl=el("dl"); for(const [k,txt] of p.layers){dl.append(el("dt",{text:k}),el("dd",{text:txt}));} det.append(dl); below.append(det);
+    } else { below.append(el("div")); }
+    const nb=el("div",{class:"note"});
+    nb.append(el("label",{for:`note-${p.id}`,text:"הערה לעמוד הזה (למשל: להגדיל את יוד, לשנות צבע)"}));
+    const ta=el("textarea",{id:`note-${p.id}`,rows:"3"});
+    const saved=el("div",{class:"saved",id:`saved-${p.id}`,"aria-live":"polite"});
+    let timer=null; ta.addEventListener("input",()=>{clearTimeout(timer);saved.textContent="";timer=setTimeout(()=>saveNote(p.id,ta.value),1200);});
+    ta.addEventListener("blur",()=>{clearTimeout(timer);if((notes[p.id]||"")!==ta.value)saveNote(p.id,ta.value);});
+    nb.append(ta,saved); below.append(nb); sec.append(below);
+    main.append(sec);
+  }
+}
+function render(){
+  let n=0;
+  for(const p of PAGES){
+    const chosen=picks[p.id]; if(chosen) n++;
+    for(const v of p.v){
+      const on=chosen===v;
+      document.getElementById(`card-${p.id}-${v}`).classList.toggle("chosen",on);
+      const b=document.getElementById(`pick-${p.id}-${v}`); b.setAttribute("aria-pressed",on?"true":"false"); b.textContent=on?"נבחרה":"זו"; b.disabled=!canWrite;
+    }
+    document.getElementById("nav-"+p.id).classList.toggle("done",!!chosen);
+    const ta=document.getElementById(`note-${p.id}`);
+    if(document.activeElement!==ta && notes[p.id]!==undefined && ta.value!==notes[p.id]) ta.value=notes[p.id];
+    ta.disabled=!canWrite;
+  }
+  document.getElementById("count").textContent=`נבחרו ${n} מתוך ${PAGES.length}`;
+  const bulk=document.getElementById("acceptRecs"); bulk.hidden=n===PAGES.length; bulk.disabled=!canWrite||bulking;
+  if(lbState) syncLb();
+}
+function localLoad(){try{const s=JSON.parse(localStorage.getItem("yud-ch01-picks")||"{}");Object.assign(picks,s.picks||{});Object.assign(notes,s.notes||{});}catch(e){}}
+function localSave(){try{localStorage.setItem("yud-ch01-picks",JSON.stringify({picks,notes}));}catch(e){}}
+
+// A transient "unavailable" gets one retry after a short random pause; anything else goes to showWriteError.
+async function write(path,data){
+  try{await db.doc(path).set(data);}
+  catch(e){if(!(e&&e.code==="unavailable"))throw e; await new Promise(r=>setTimeout(r,300+Math.random()*600)); await db.doc(path).set(data);}
+}
+async function choose(pid,v){
+  if(!canWrite) return;
+  const prev=picks[pid]; picks[pid]=v; render();
+  if(useLocal){localSave();return;}
+  try{await write(`picks/${pid}`,{variant:v,model:MODELS[v],at:new Date().toISOString()});}
+  catch(e){if(prev)picks[pid]=prev; else delete picks[pid]; render(); showWriteError(e);}
+}
+let bulking=false;
+async function acceptRecs(){
+  if(!canWrite||bulking) return;
+  bulking=true; render();
+  for(const p of PAGES){ if(!canWrite) break; if(!picks[p.id]&&p.rec) await choose(p.id,p.rec); }
+  bulking=false; render();
+}
+document.getElementById("acceptRecs").addEventListener("click",acceptRecs);
+async function saveNote(pid,text){
+  const out=document.getElementById(`saved-${pid}`);
+  notes[pid]=text;
+  if(useLocal){localSave();out.textContent="נשמר בדפדפן הזה";return;}
+  try{await write(`notes/${pid}`,{text,at:new Date().toISOString()});out.textContent="נשמר";}
+  catch(e){out.textContent="לא נשמר"; showWriteError(e);}
+}
+function showWriteError(e){
+  const s=document.getElementById("saveNote");
+  if(e&&e.code==="invalid_argument"){canWrite=false;s.textContent="אין לך הרשאה לשמור בחירות בעמוד הזה. אפשר לצפות בלבד.";render();}
+  else if(e&&e.code==="quota_exceeded"){s.textContent="המקום לשמירה מלא. כתבו לי ואפנה מקום.";}
+  else{s.textContent="השמירה נכשלה הפעם. נסו שוב בעוד רגע.";}
+}
+
+let lbState=null;
+function openLb(pid,v){lbState={pid,v};document.getElementById("lb").hidden=false;syncLb();document.getElementById("lbClose").focus();}
+function syncLb(){
+  const p=PAGES.find(x=>x.id===lbState.pid); const v=lbState.v;
+  const img=document.getElementById("lbImg"); img.src=fullSrc(p.id,v); img.alt=`${p.label}, גרסה ${v}`;
+  document.getElementById("lbLabel").textContent=`${p.label} · ${v} · ${MODELS[v]}`+(p.rec===v?" · ההמלצה שלי":"")+(p.flags&&p.flags[v]?" · לא מומלץ: "+p.flags[v]:"");
+  const b=document.getElementById("lbPick"); const on=picks[p.id]===v; b.setAttribute("aria-pressed",on?"true":"false"); b.textContent=on?"נבחרה":"זו"; b.disabled=!canWrite;
+}
+function stepLb(d){const p=PAGES.find(x=>x.id===lbState.pid);const i=p.v.indexOf(lbState.v);lbState.v=p.v[(i+d+p.v.length)%p.v.length];syncLb();}
+function closeLb(){document.getElementById("lb").hidden=true; const t=document.querySelector(`#card-${lbState.pid}-${lbState.v} .thumb`); lbState=null; if(t)t.focus();}
+document.getElementById("lbClose").addEventListener("click",closeLb);
+document.getElementById("lbPrev").addEventListener("click",()=>stepLb(1));
+document.getElementById("lbNext").addEventListener("click",()=>stepLb(-1));
+document.getElementById("lbPick").addEventListener("click",()=>{if(lbState)choose(lbState.pid,lbState.v);});
+document.getElementById("lb").addEventListener("click",e=>{if(e.target.id==="lb")closeLb();});
+document.addEventListener("keydown",e=>{if(!lbState)return; if(e.key==="Escape")closeLb(); else if(e.key==="ArrowLeft")stepLb(1); else if(e.key==="ArrowRight")stepLb(-1);});
+
+buildStrip(); buildPages(); render();
+
+(async()=>{
+  const s=document.getElementById("saveNote");
+  try{ db = window.claude && window.claude.use ? await window.claude.use("db") : null; }catch(e){ db=null; }
+  if(!db){ useLocal=true; localLoad(); render(); s.textContent="הבחירות נשמרות רק בדפדפן הזה (השמירה המשותפת לא זמינה כאן)."; return; }
+  try{ const user=await window.claude.use("user"); const w=user&&user.can?await user.can("data.write"):null; if(w===false) canWrite=false; }catch(e){}
+  s.textContent=canWrite?"כל בחירה והערה נשמרות מיד.":"אפשר לצפות בלבד.";
+  db.collection("picks").onSnapshot(snap=>{for(const d of snap.docs){const x=d.data();if(x&&x.variant)picks[d.id]=x.variant;} for(const c of snap.docChanges()){if(c.type==="removed")delete picks[c.doc.id];} render();},
+    e=>{s.textContent="לא הצלחתי לטעון את הבחירות השמורות.";});
+  db.collection("notes").onSnapshot(snap=>{for(const d of snap.docs){const x=d.data();if(x&&typeof x.text==="string")notes[d.id]=x.text;} render();},
+    e=>{});
+})();
+</script>

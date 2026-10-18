@@ -35,9 +35,10 @@
   "p16": "p8xMJq1ehw"
  },
  "todo": [
-  "gallery artifact (storyboard page in Claude)",
-  "update deck with links",
-  "QA images once network opens"
+  "read picks/notes from the review artifact db",
+  "update deck with real frames and links",
+  "SVG overlays (counts, p12 composite)",
+  "fix Yud shape on chosen frames if needed, then upscale"
  ],
  "storyboard": {
   "note": "שורה לכל עמוד: טקסט ורבדים + 4 גרסאות (A Nano Banana Pro, B Nano Banana 2.1, C GPT Image 2.5, D Seedream 5 Pro) מ-Higgsfield. הסקיצות הישנות הוסרו מהלוח (סתרו את הבריפים).",
@@ -182,5 +183,6 @@
     "ec574868-5f28-44b1-b6c7-ac677c5c1dcf"
    ]
   }
- }
+ },
+ "reviewArtifact": "https://claude.ai/artifact/T8oKRYZMX61ikpvCYzdszw"
 }

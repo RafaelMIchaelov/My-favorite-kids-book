@@ -35,7 +35,7 @@
   "p16": "p8xMJq1ehw"
  },
  "todo": [
-  "create panels+text+frames for p08..p16 (payloads: scratchpad space_call_b2..b4.json; anchor first panel on previous real panel id)",
+  "create panels+text+frames for p11..p16 (payloads: scratchpad space_call_b3/b4.json; anchor first panel on previous real panel id)",
   "share view link",
   "update deck"
  ],
@@ -49,7 +49,10 @@
    "p04": "b8820843-843f-4fc0-9754-9b8f0ddd0434",
    "p05": "2d2d8db0-45ac-489a-97a6-cf7aa5621bd7",
    "p06": "219a5ff5-f886-4c2b-9b4c-00b88efecadc",
-   "p07": "9f118bf6-b9fc-47ea-a5b5-68e77971d240"
+   "p07": "9f118bf6-b9fc-47ea-a5b5-68e77971d240",
+   "p08": "e596fa30-a418-4d84-801f-28a78d9fa244",
+   "p09": "4d5c6d81-ea39-4b04-99a8-1b6009e0f681",
+   "p10": "38458c70-46a0-482b-9056-50bfc555ce0c"
   },
   "texts": {
    "cover": "0f9df159-3a8b-42f6-a234-a0b36fe87aa5",
@@ -59,7 +62,10 @@
    "p04": "cebf800a-8d8b-4fa2-8dae-57ed43010da5",
    "p05": "369d7f93-bcc6-48a2-a657-b005cf750622",
    "p06": "5870004b-d71f-4247-98bd-39a856d78a73",
-   "p07": "c55d4644-b8f7-4cd4-891c-3ac75389d13e"
+   "p07": "c55d4644-b8f7-4cd4-891c-3ac75389d13e",
+   "p08": "2f9eff77-f7b6-49bf-bef7-2c28b6c69f7e",
+   "p09": "f54f0103-f243-4b44-9bd9-1d13bea6c34e",
+   "p10": "2f7a960f-57fb-4922-b6b9-515001968f3d"
   },
   "frames": {
    "cover": [
@@ -109,6 +115,24 @@
     "c1172743-2aa6-48da-a62e-a23ca2ca04d4",
     "816651c0-24f5-426a-b594-ba94a7a61e4c",
     "29e20a81-f753-4652-84d6-c8afe587b94b"
+   ],
+   "p08": [
+    "195f7ae7-483c-409d-a15c-1d0a3151a467",
+    "33d47cc4-406b-4c91-a058-d1574e41bd13",
+    "3c0298f3-502f-4298-982d-c0e58ee9f7cc",
+    "70fe46ad-10f9-4626-ba6e-156b457ef21a"
+   ],
+   "p09": [
+    "ef01914d-db2c-448e-8f5a-9aa810404dcd",
+    "919d8822-aac0-43e3-86c4-ffe9cd77d1f1",
+    "1ab3d00d-1bf0-452c-a218-193af42059b8",
+    "5e3e91de-26cf-488d-99c7-6803b1a265fc"
+   ],
+   "p10": [
+    "d6e367c5-ec5b-4273-bc93-e9cf083e0e36",
+    "40362077-5d5a-404a-a420-0b1253a79d24",
+    "16598756-5686-4893-87d1-192588b17b34",
+    "a751f147-d18d-4f5c-9d81-4ab873a4e10c"
    ]
   }
  }

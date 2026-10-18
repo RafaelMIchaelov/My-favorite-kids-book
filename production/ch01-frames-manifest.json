@@ -1,0 +1,541 @@
+{
+ "note": "Chapter 1 storyboard frames generated on Higgsfield; fetched and compressed by .github/workflows/fetch-ch01-frames.yml",
+ "frames": [
+  {
+   "index": 0,
+   "page": "cover",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "cover_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171324_51242461-17b4-41ac-8a7b-fda01cdbe29d.png"
+  },
+  {
+   "index": 1,
+   "page": "cover",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "cover_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171452_b1ab34cd-ea88-4c17-aaca-bd19bb1c6f54.png"
+  },
+  {
+   "index": 2,
+   "page": "cover",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "cover_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171637_ac2987f9-f103-4a04-b392-2a054db1357a.png"
+  },
+  {
+   "index": 3,
+   "page": "cover",
+   "variant": "D",
+   "model": "Seedream 5 Pro",
+   "name": "cover_D",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171933_a8886855-8a0a-44fb-87a0-9e4dd11a4ba2.png"
+  },
+  {
+   "index": 10,
+   "page": "p01",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "p01_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171322_b67193e1-fc8e-449c-b663-a43a35c9ce19.png"
+  },
+  {
+   "index": 11,
+   "page": "p01",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "p01_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171453_761b3272-c30f-475b-9ffc-57ce5adaa8a2.png"
+  },
+  {
+   "index": 12,
+   "page": "p01",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "p01_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171639_c134840a-dfa4-460b-8ecd-3400d61aa212.png"
+  },
+  {
+   "index": 13,
+   "page": "p01",
+   "variant": "D",
+   "model": "Seedream 5 Pro",
+   "name": "p01_D",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171932_b683de31-13a8-4060-a1a1-84c810c5cc8a.png"
+  },
+  {
+   "index": 20,
+   "page": "p02",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "p02_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171322_5b4be69c-22ba-4055-b554-f937f80e1b27.png"
+  },
+  {
+   "index": 21,
+   "page": "p02",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "p02_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171454_81bf6659-9963-4b02-8860-db8faad367ae.png"
+  },
+  {
+   "index": 22,
+   "page": "p02",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "p02_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171806_ba709eb5-770b-4f0d-8fa7-4a69affe7754.png"
+  },
+  {
+   "index": 23,
+   "page": "p02",
+   "variant": "D",
+   "model": "Seedream 5 Pro",
+   "name": "p02_D",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171930_44826cd9-a3ec-4015-a558-583892a04928.png"
+  },
+  {
+   "index": 30,
+   "page": "p03",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "p03_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171322_31bbaeaf-93ad-400d-8960-c3d5b0df2935.png"
+  },
+  {
+   "index": 31,
+   "page": "p03",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "p03_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171455_9e3dc620-9cb0-4a12-92a6-439b55924e9e.png"
+  },
+  {
+   "index": 32,
+   "page": "p03",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "p03_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171804_e70869cc-bec2-4998-95a9-dc05e28b8a37.png"
+  },
+  {
+   "index": 33,
+   "page": "p03",
+   "variant": "D",
+   "model": "Seedream 5 Pro",
+   "name": "p03_D",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171929_1269ec58-1cce-4c3e-9847-880303f242c6.png"
+  },
+  {
+   "index": 40,
+   "page": "p04",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "p04_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171321_5c739b2e-6c5b-4ed3-b36d-82c127c8b066.png"
+  },
+  {
+   "index": 41,
+   "page": "p04",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "p04_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171454_cf8f2fb6-36dd-49a3-b346-df992adb3fac.png"
+  },
+  {
+   "index": 42,
+   "page": "p04",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "p04_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171806_d90678c8-88f8-42bb-9f39-455f3b6eb7e3.png"
+  },
+  {
+   "index": 43,
+   "page": "p04",
+   "variant": "D",
+   "model": "Seedream 5 Pro",
+   "name": "p04_D",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171928_d68a7d6d-9568-4891-abdf-461f091d8e58.png"
+  },
+  {
+   "index": 50,
+   "page": "p05",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "p05_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171322_b948c018-fa12-44e3-9cd0-6a77dd813602.png"
+  },
+  {
+   "index": 51,
+   "page": "p05",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "p05_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171454_4a954cf5-da1d-44ba-a179-7694665bb992.png"
+  },
+  {
+   "index": 52,
+   "page": "p05",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "p05_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171806_07aa1cb5-bad5-4134-a25d-ed237a96b74a.png"
+  },
+  {
+   "index": 53,
+   "page": "p05",
+   "variant": "D",
+   "model": "Seedream 5 Pro",
+   "name": "p05_D",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171929_47c0f83c-bd0c-441d-b1d4-fa1d60432cd1.png"
+  },
+  {
+   "index": 60,
+   "page": "p06",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "p06_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171322_a6764c14-34a8-40a3-8b0d-1d803a294823.png"
+  },
+  {
+   "index": 61,
+   "page": "p06",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "p06_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171455_f9cab6fb-3a4e-4236-a91d-1a46e16df652.png"
+  },
+  {
+   "index": 62,
+   "page": "p06",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "p06_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171804_564fa2f5-f13d-41fb-9567-2d5d0976eaf8.png"
+  },
+  {
+   "index": 63,
+   "page": "p06",
+   "variant": "D",
+   "model": "Seedream 5 Pro",
+   "name": "p06_D",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171929_47d950a2-75b2-438b-92bc-aff323b20e4f.png"
+  },
+  {
+   "index": 70,
+   "page": "p07",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "p07_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171322_30739c1e-8744-48e1-8354-1578809dc73e.png"
+  },
+  {
+   "index": 71,
+   "page": "p07",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "p07_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171637_a3ad6605-eaec-4a0c-a945-542014ecc5c5.png"
+  },
+  {
+   "index": 72,
+   "page": "p07",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "p07_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171805_3e5fefa8-2948-4009-94c6-a1786b775669.png"
+  },
+  {
+   "index": 73,
+   "page": "p07",
+   "variant": "D",
+   "model": "Seedream 5 Pro",
+   "name": "p07_D",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171933_4185201e-5b07-4349-a157-ada5fb27c279.png"
+  },
+  {
+   "index": 80,
+   "page": "p08",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "p08_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171321_0c4915b8-07c0-4886-a9b2-30edca75bc9f.png"
+  },
+  {
+   "index": 81,
+   "page": "p08",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "p08_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171636_a7aa2778-2ce5-4e04-84ee-fab83be46527.png"
+  },
+  {
+   "index": 82,
+   "page": "p08",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "p08_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171804_d5a67fb7-661e-41fb-88c4-c0381320be97.png"
+  },
+  {
+   "index": 83,
+   "page": "p08",
+   "variant": "D",
+   "model": "Seedream 5 Pro",
+   "name": "p08_D",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171928_ac317a22-61ac-4f3e-9a84-3b8a7642a783.png"
+  },
+  {
+   "index": 90,
+   "page": "p09",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "p09_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171322_dc0df638-2782-4549-9822-90afe4c1fcd9.png"
+  },
+  {
+   "index": 91,
+   "page": "p09",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "p09_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171637_924b6fa1-b162-4fec-9c6b-58ca0c5f797f.png"
+  },
+  {
+   "index": 92,
+   "page": "p09",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "p09_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171803_46c55d89-f5c4-4950-b076-3300b5c7323d.png"
+  },
+  {
+   "index": 93,
+   "page": "p09",
+   "variant": "D",
+   "model": "Seedream 5 Pro",
+   "name": "p09_D",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_172026_43fef17b-d1df-4ca4-b18c-09a7c0475655.png"
+  },
+  {
+   "index": 100,
+   "page": "p10",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "p10_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171322_8e37e24c-13f3-4ae1-98fd-0961e9952a71.png"
+  },
+  {
+   "index": 101,
+   "page": "p10",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "p10_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171638_e5a15c85-0617-431e-b1af-173d25d22593.png"
+  },
+  {
+   "index": 102,
+   "page": "p10",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "p10_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171804_b6f76834-71d2-4335-a488-d976b65f25e7.png"
+  },
+  {
+   "index": 103,
+   "page": "p10",
+   "variant": "D",
+   "model": "Seedream 5 Pro",
+   "name": "p10_D",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_172027_e7f3885a-55fa-48a9-959b-694eccb63160.png"
+  },
+  {
+   "index": 110,
+   "page": "p11",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "p11_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171322_7671b510-1e86-4ed8-96b0-caa32ffb90eb.png"
+  },
+  {
+   "index": 111,
+   "page": "p11",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "p11_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171638_eff4e3ab-ace7-40c2-8585-18907c78234f.png"
+  },
+  {
+   "index": 112,
+   "page": "p11",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "p11_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171805_562a5b1e-0fbe-466d-90d9-99fbdd1935e0.png"
+  },
+  {
+   "index": 113,
+   "page": "p11",
+   "variant": "D",
+   "model": "Seedream 5 Pro",
+   "name": "p11_D",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_172027_88823937-c0cb-447d-9178-13bad2ec978e.png"
+  },
+  {
+   "index": 120,
+   "page": "p12",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "p12_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171453_5aa3a670-2856-4a7c-badc-577279e0c113.png"
+  },
+  {
+   "index": 121,
+   "page": "p12",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "p12_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171639_a496f00c-f4fc-4d8e-a73b-b94e1c81a5d1.png"
+  },
+  {
+   "index": 122,
+   "page": "p12",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "p12_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171803_1d5616ad-eccb-4068-894e-d62aa112f39b.png"
+  },
+  {
+   "index": 130,
+   "page": "p13",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "p13_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171453_714bf918-41e5-4b9c-9006-c9e8ea35b8d4.png"
+  },
+  {
+   "index": 131,
+   "page": "p13",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "p13_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171638_1d4afb29-3a35-4fd0-b799-00e0420322b1.png"
+  },
+  {
+   "index": 132,
+   "page": "p13",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "p13_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171805_ed02c9a5-c2b1-4a3c-b683-391b27ce107c.png"
+  },
+  {
+   "index": 133,
+   "page": "p13",
+   "variant": "D",
+   "model": "Seedream 5 Pro",
+   "name": "p13_D",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_172026_d447a432-2432-45a0-b8d2-1b43b2ac2a82.png"
+  },
+  {
+   "index": 140,
+   "page": "p14",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "p14_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171453_31343d89-6edb-487f-af93-e03c4ff45b51.png"
+  },
+  {
+   "index": 141,
+   "page": "p14",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "p14_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171637_980e0c1e-f90b-45db-9174-38cd3e29f2db.png"
+  },
+  {
+   "index": 142,
+   "page": "p14",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "p14_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171928_17076cae-72d2-4b0e-be80-dae6a6e4d300.png"
+  },
+  {
+   "index": 143,
+   "page": "p14",
+   "variant": "D",
+   "model": "Seedream 5 Pro",
+   "name": "p14_D",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_172026_5730b593-cdfd-4411-b4b8-566a919ee230.png"
+  },
+  {
+   "index": 150,
+   "page": "p15",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "p15_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171453_3cdc9f17-87c9-45c9-9975-2b52c1b6c693.png"
+  },
+  {
+   "index": 151,
+   "page": "p15",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "p15_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171637_b05d9f6e-d8c4-400d-b23d-0539300fa7c2.png"
+  },
+  {
+   "index": 152,
+   "page": "p15",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "p15_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171929_b83961a3-11b5-4fb0-82a9-62593ae09aa0.png"
+  },
+  {
+   "index": 153,
+   "page": "p15",
+   "variant": "D",
+   "model": "Seedream 5 Pro",
+   "name": "p15_D",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_172026_da53df9d-ba88-481a-a24c-fcffc2139df8.png"
+  },
+  {
+   "index": 160,
+   "page": "p16",
+   "variant": "A",
+   "model": "Nano Banana Pro",
+   "name": "p16_A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171453_c26d296f-ac8a-44c1-b492-bf3d3b21e9d1.png"
+  },
+  {
+   "index": 161,
+   "page": "p16",
+   "variant": "B",
+   "model": "Nano Banana 2.1",
+   "name": "p16_B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171639_5dd6e6ec-43d9-47e4-8257-247fd32a0a34.png"
+  },
+  {
+   "index": 162,
+   "page": "p16",
+   "variant": "C",
+   "model": "GPT Image 2.5",
+   "name": "p16_C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_171932_18f278a1-3e8a-483b-a4ca-361fba9e0f9a.png"
+  },
+  {
+   "index": 163,
+   "page": "p16",
+   "variant": "D",
+   "model": "Seedream 5 Pro",
+   "name": "p16_D",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_172026_017c6f2c-595b-47a1-9c14-7dad594d6382.png"
+  }
+ ]
+}

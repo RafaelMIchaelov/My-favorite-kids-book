@@ -1,0 +1,61 @@
+name: Fetch chapter 1 frames
+
+# The Claude Code sandbox cannot reach the image CDN, so this job downloads the
+# generated storyboard frames listed in production/ch01-frames-manifest.json,
+# compresses them for the web and commits them back to the same branch.
+on:
+  push:
+    paths:
+      - production/ch01-frames-manifest.json
+      - .github/workflows/fetch-ch01-frames.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-ch01-frames-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pillow==11.1.0
+      - name: Download and compress frames
+        run: |
+          python3 - <<'PY'
+          import io, json, pathlib, urllib.request
+          from PIL import Image
+          manifest = json.load(open("production/ch01-frames-manifest.json"))
+          full = pathlib.Path("assets/frames/ch01/full"); full.mkdir(parents=True, exist_ok=True)
+          thumb = pathlib.Path("assets/frames/ch01/thumb"); thumb.mkdir(parents=True, exist_ok=True)
+          failed = []
+          for f in manifest["frames"]:
+              try:
+                  req = urllib.request.Request(f["url"], headers={"User-Agent": "Mozilla/5.0"})
+                  data = urllib.request.urlopen(req, timeout=120).read()
+                  im = Image.open(io.BytesIO(data)).convert("RGB")
+                  w, h = im.size
+                  big = im.resize((1200, round(h * 1200 / w)), Image.LANCZOS)
+                  big.save(full / f"{f['name']}.webp", "WEBP", quality=84, method=6)
+                  big.save(full / f"{f['name']}.jpg", "JPEG", quality=86, optimize=True, progressive=True)
+                  small = im.resize((480, round(h * 480 / w)), Image.LANCZOS)
+                  small.save(thumb / f"{f['name']}.jpg", "JPEG", quality=80, optimize=True, progressive=True)
+                  print("ok", f["name"], w, h)
+              except Exception as e:
+                  failed.append(f["name"]); print("FAILED", f["name"], e)
+          print("failed:", failed)
+          PY
+      - name: Commit frames
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/frames/ch01
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "Add chapter 1 storyboard frames (web-compressed)"
+          git push

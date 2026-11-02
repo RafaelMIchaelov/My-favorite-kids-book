@@ -1,0 +1,201 @@
+{
+ "note": "Yud redesign after author feedback (2026-11-01): the old round head read as a comic speech bubble; the new Yud is the Frank Ruhl Libre letter yud (flat top like a fringe, a small kotz on top-left like a topknot, the leg from the right) with white eyes. Source: assets/ref/ch01/yud2/yud2-design.html. Chosen illustration direction: version C (GPT Image 2.5).",
+ "higgsfield_media": {
+  "sheet": "785f8da0-3671-4e33-b933-3d80db1ade19",
+  "calm": "2d4e7574-5289-4385-a607-0a071b80f89c",
+  "joy": "b1a8ce5a-d360-465a-8222-fe97c1ca80f8",
+  "curious": "8c51a447-0f31-4b9e-b6e0-e8e6bea4ffaf",
+  "wide": "a297a31f-e6cc-4721-b292-53e3157bf667",
+  "giggle": "2dba4786-2779-4511-bffe-810392efe61f",
+  "sad": "75bd377b-bf37-4639-a699-9644d6a1f328",
+  "determined": "27ef1eb3-b6d7-4725-a2dc-788d888402f0",
+  "half": "dfac86f3-bb8c-43b9-9a65-078ec944587d",
+  "dizzy": "ace02114-a09b-4e9a-8a0d-b2e0ceda7cae"
+ },
+ "uploaded": true,
+ "confirmed": true,
+ "c_frames": {
+  "cover": [
+   "joy",
+   "ac2987f9-f103-4a04-b392-2a054db1357a"
+  ],
+  "p01": [
+   "calm",
+   "c134840a-dfa4-460b-8ecd-3400d61aa212"
+  ],
+  "p02": [
+   "sad",
+   "ba709eb5-770b-4f0d-8fa7-4a69affe7754"
+  ],
+  "p03": [
+   "half",
+   "e70869cc-bec2-4998-95a9-dc05e28b8a37"
+  ],
+  "p04": [
+   "wide",
+   "d90678c8-88f8-42bb-9f39-455f3b6eb7e3"
+  ],
+  "p05": [
+   "determined",
+   "07aa1cb5-bad5-4134-a25d-ed237a96b74a"
+  ],
+  "p06": [
+   "curious",
+   "564fa2f5-f13d-41fb-9567-2d5d0976eaf8"
+  ],
+  "p07": [
+   "joy",
+   "3e5fefa8-2948-4009-94c6-a1786b775669"
+  ],
+  "p08": [
+   "giggle",
+   "d5a67fb7-661e-41fb-88c4-c0381320be97"
+  ],
+  "p09": [
+   "wide",
+   "46c55d89-f5c4-4950-b076-3300b5c7323d"
+  ],
+  "p10": [
+   "dizzy",
+   "b6f76834-71d2-4335-a488-d976b65f25e7"
+  ],
+  "p11": [
+   "calm",
+   "562a5b1e-0fbe-466d-90d9-99fbdd1935e0"
+  ],
+  "p13": [
+   "curious",
+   "ed02c9a5-c2b1-4a3c-b683-391b27ce107c"
+  ],
+  "p14": [
+   "determined",
+   "17076cae-72d2-4b0e-be80-dae6a6e4d300"
+  ],
+  "p15": [
+   "joy",
+   "b83961a3-11b5-4fb0-82a9-62593ae09aa0"
+  ],
+  "p16": [
+   "curious",
+   "18f278a1-3e8a-483b-a4ca-361fba9e0f9a"
+  ]
+ },
+ "edits": {},
+ "pilot": {
+  "index_scheme": "1000 + page*10 + model (1 gpt_image_2_5 xhigh, 2 nano_banana_pro)",
+  "jobs": {
+   "1031": "48f5d839-ce08-412b-9461-8674282157e7",
+   "1032": "4d3d204a-98e1-40a0-bd86-375425744319",
+   "1071": "04e3d5e2-c07e-4af0-bd94-4c9c76ab989c",
+   "1072": "d0545209-ad78-429f-8379-76b91c7c3b89",
+   "1161": "0af634dd-fe40-40bd-a2df-838d456babd0",
+   "1162": "54d0ade2-e870-476f-a485-cebdacfe756d"
+  }
+ },
+ "pilot_verdict": "GPT Image 2.5 keeps place and size best (p03); Nano Banana Pro moved Yud into the lyre on p03 but is bolder on p16. Running both for every page, pick per page.",
+ "run": {
+  "index_scheme": "2000 + page*10 + model (1 gpt_image_2_5 xhigh, 2 nano_banana_pro); cover = page 0",
+  "jobs": {
+   "2001": "1c8be18c-06f8-4a5f-815e-d19067a99513",
+   "2002": "dc339733-08a1-42f5-8b6a-940223f05c23",
+   "2011": "87befde2-3366-4e40-86b4-d280405e018b",
+   "2012": "a5771f34-8adf-4bbc-8bbf-1c3fafad24a1",
+   "2021": "62bb3e57-ed0e-454f-9bcd-5f9b29ab6e75",
+   "2022": "e5fb75fb-eb3f-4244-b2bf-676cb88b65b5",
+   "2041": "f5c4b312-62cb-4ec8-a8a9-bc1afec72e55",
+   "2042": "b862ec12-6d12-48f7-8fd9-55b0c1397be0",
+   "2051": "ddbd3b24-abfa-46f2-9e63-ff6ce134bf37",
+   "2052": "d7200518-940f-47cd-841e-d32a66310905",
+   "2061": "f39ef792-eb57-4287-b640-eb70e109ec53",
+   "2062": "aba8c267-6cd4-42e1-b8ff-31a2f34ad39e",
+   "2081": "e7248d07-1db5-4919-9063-58e02aaee49b",
+   "2082": "40130371-f716-45ab-a979-6d774c0718dc",
+   "2091": "f4f93e2d-efaa-4e26-9792-0e8a25475fa4",
+   "2092": "d2f3fa1a-b7ed-4543-a159-79148b449317",
+   "2101": "696768b3-6216-4f14-9574-1a26981cb8c9",
+   "2102": "6f665dd8-c83e-42fc-8eb2-dbec4ed8bd4e",
+   "2111": "f77c42a6-da8f-47ed-a927-a3bb63ac3208",
+   "2112": "20bdaf16-87cc-4aa5-ab3a-01f23b942eeb",
+   "2131": "11923d2f-51be-4eee-9d90-dff828a51624",
+   "2132": "5153a275-4f76-4f97-a289-a28098282627",
+   "2141": "d17c6e3f-0101-4cc9-9d77-28c9f92176f1",
+   "2142": "f01f5f90-64e6-4a85-8e83-366c4d1f33ae",
+   "2151": "72ac6e08-d91a-4362-b64d-a336cda77827",
+   "2152": "3bb80d7a-1c12-436c-9af3-a912cbd3093a",
+   "2161": "9c2a8a73-62e2-4b2b-a46d-d472c54c659b",
+   "2162": "837799b2-fd59-4879-8d9c-71ae630a5bb0"
+  }
+ },
+ "results": {
+  "2001": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162816_1c8be18c-06f8-4a5f-815e-d19067a99513.png",
+  "2002": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162816_dc339733-08a1-42f5-8b6a-940223f05c23.png",
+  "2011": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162817_87befde2-3366-4e40-86b4-d280405e018b.png",
+  "2012": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162816_a5771f34-8adf-4bbc-8bbf-1c3fafad24a1.png",
+  "2021": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162816_62bb3e57-ed0e-454f-9bcd-5f9b29ab6e75.png",
+  "2022": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162816_e5fb75fb-eb3f-4244-b2bf-676cb88b65b5.png",
+  "2041": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162817_f5c4b312-62cb-4ec8-a8a9-bc1afec72e55.png",
+  "2042": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162817_b862ec12-6d12-48f7-8fd9-55b0c1397be0.png",
+  "2051": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162817_ddbd3b24-abfa-46f2-9e63-ff6ce134bf37.png",
+  "2052": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162816_d7200518-940f-47cd-841e-d32a66310905.png",
+  "2061": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162816_f39ef792-eb57-4287-b640-eb70e109ec53.png",
+  "2062": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162816_aba8c267-6cd4-42e1-b8ff-31a2f34ad39e.png",
+  "2081": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162908_e7248d07-1db5-4919-9063-58e02aaee49b.png",
+  "2082": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162908_40130371-f716-45ab-a979-6d774c0718dc.png",
+  "2091": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162909_f4f93e2d-efaa-4e26-9792-0e8a25475fa4.png",
+  "2092": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162908_d2f3fa1a-b7ed-4543-a159-79148b449317.png",
+  "2101": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162910_696768b3-6216-4f14-9574-1a26981cb8c9.png",
+  "2102": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162908_6f665dd8-c83e-42fc-8eb2-dbec4ed8bd4e.png",
+  "2111": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162910_f77c42a6-da8f-47ed-a927-a3bb63ac3208.png",
+  "2112": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162908_20bdaf16-87cc-4aa5-ab3a-01f23b942eeb.png",
+  "2131": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162908_11923d2f-51be-4eee-9d90-dff828a51624.png",
+  "2132": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162908_5153a275-4f76-4f97-a289-a28098282627.png",
+  "2141": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162911_d17c6e3f-0101-4cc9-9d77-28c9f92176f1.png",
+  "2142": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162908_f01f5f90-64e6-4a85-8e83-366c4d1f33ae.png",
+  "2151": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162943_72ac6e08-d91a-4362-b64d-a336cda77827.png",
+  "2152": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162942_3bb80d7a-1c12-436c-9af3-a912cbd3093a.png",
+  "2161": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162942_9c2a8a73-62e2-4b2b-a46d-d472c54c659b.png",
+  "2162": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162942_837799b2-fd59-4879-8d9c-71ae630a5bb0.png",
+  "1031": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162449_48f5d839-ce08-412b-9461-8674282157e7.png",
+  "1032": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162449_4d3d204a-98e1-40a0-bd86-375425744319.png",
+  "1071": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162449_04e3d5e2-c07e-4af0-bd94-4c9c76ab989c.png",
+  "1072": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162449_d0545209-ad78-429f-8379-76b91c7c3b89.png",
+  "1161": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162450_0af634dd-fe40-40bd-a2df-838d456babd0.png",
+  "1162": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162450_54d0ade2-e870-476f-a485-cebdacfe756d.png"
+ },
+ "qa": {
+  "cover": "pick 2001 (GPT): same spot on the hill, joy eyes, kotz visible; Nano 2002 also fine",
+  "p01": "pick 2012 (Nano): Yud reads clearly in the window; GPT 2011 tiny",
+  "p02": "pick 2022 (Nano): clear letter shape and sad eyes on the branch; GPT 2021 smaller",
+  "p03": "pick 1031 (GPT pilot): stays on top of the lyre; Nano 1032 moved Yud into the strings",
+  "p04": "pick 2042 (Nano): clear and cute beside the lyre player; GPT 2041 eyes read oddly",
+  "p07": "pick 1071 (GPT pilot) or 1072; both fine",
+  "p05": "pick 2052 (Nano): clear determined Yud, leg in the ribbon; GPT 2051 small",
+  "p06": "pick 2061 (GPT): stays on the wall top; Nano 2062 made Yud huge and floating in the sky",
+  "p08": "pick 2082 (Nano): kotz and giggle eyes read clearly on the bundles",
+  "p09": "pick 2092 (Nano): head with fringe and topknot peeking over the bowl; GPT 2091 also fine, smaller",
+  "p10": "pick 2101 (GPT): dizzy Yud on the rock, same place; Nano 2102 equally good",
+  "p11": "pick 2111 (GPT): Yud on the girl's bundle, calm; Nano 2112 equally good",
+  "p13": "pick 2131 (GPT): small Yud on the hill; Nano 2132 drew a spiky monster (off-model)",
+  "p14": "pick 2141 (GPT): dress gone, determined, right size; Nano 2142 made Yud huge",
+  "p15": "pick 2152 (Nano): clear kotz and joy eyes on the terraces; GPT 2151 also fine",
+  "p16": "pick 2162 (Nano run 2): size close to the original, thread from the leg into the opening"
+ },
+ "picks": {
+  "cover": "2001",
+  "p01": "2012",
+  "p02": "2022",
+  "p03": "1031",
+  "p04": "2042",
+  "p05": "2052",
+  "p06": "2061",
+  "p07": "1071",
+  "p08": "2082",
+  "p09": "2092",
+  "p10": "2101",
+  "p11": "2111",
+  "p13": "2131",
+  "p14": "2141",
+  "p15": "2152",
+  "p16": "2162"
+ }
+}

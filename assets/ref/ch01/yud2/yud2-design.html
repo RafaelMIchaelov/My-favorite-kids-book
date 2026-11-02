@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;background:transparent}
+.cell{width:1024px;height:1024px;display:grid;place-items:center}
+.cell.paper{background:#F3E7D0}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <!-- Yud: the Frank Ruhl Libre letter yud (flipped from font units) with a slightly bolder kotz -->
+  <g id="yud">
+    <path transform="translate(0,650) scale(1,-1)" d="M158 190 145 216Q184 242 205.5 268.0Q227 294 227 322Q227 345 216.5 355.5Q206 366 178 366H102Q60 366 40.0 385.0Q20 404 20 454Q20 489 26.5 519.0Q33 549 40.5 570.0Q48 591 51 597H70V581Q70 568 77.5 559.0Q85 550 101 550H200Q235 550 250.5 534.5Q266 519 270 510Q274 502 276.5 481.5Q279 461 281.0 438.0Q283 415 283 398Q283 346 270.0 310.0Q257 274 237.5 251.0Q218 228 196.5 213.5Q175 199 158 190Z"/>
+    <path d="M36 108 C33 86 40 62 53 44 C59 36 69 38 71 46 C75 62 75 84 72 104 Z"/>
+  </g>
+</defs></svg>
+<div id="out"></div>
+<script>
+const W = "#FBF6EC", N = "#1B2548";
+const L = 94, R = 184, Y = 210;
+function c(x, y, r){ return `<circle cx="${x}" cy="${y}" r="${r}" fill="${W}"/>`; }
+const eyes = {
+  calm: () => c(L, Y, 25) + c(R, Y, 25),
+  wide: () => c(L, Y, 31) + c(R, Y, 31),
+  curious: () => c(L, Y + 6, 21) + c(R, Y - 4, 31),
+  joy: () => [L, R].map(x => `<path d="M${x-22} ${Y+6} Q${x} ${Y-22} ${x+22} ${Y+6}" stroke="${W}" stroke-width="11" fill="none" stroke-linecap="round"/>`).join(""),
+  giggle: () => `<path d="M${L-16} ${Y-17} L${L+16} ${Y} L${L-16} ${Y+17}" stroke="${W}" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M${R+16} ${Y-17} L${R-16} ${Y} L${R+16} ${Y+17}" stroke="${W}" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`,
+  sad: () => c(L, Y, 26) + c(R, Y, 26) + `<polygon points="${L-32},${Y+2} ${L+32},${Y-16} ${L+32},${Y-40} ${L-32},${Y-40}" fill="${N}"/><polygon points="${R-32},${Y-16} ${R+32},${Y+2} ${R+32},${Y-40} ${R-32},${Y-40}" fill="${N}"/>`,
+  determined: () => c(L, Y, 26) + c(R, Y, 26) + `<polygon points="${L-32},${Y-16} ${L+32},${Y+2} ${L+32},${Y-40} ${L-32},${Y-40}" fill="${N}"/><polygon points="${R-32},${Y+2} ${R+32},${Y-16} ${R+32},${Y-40} ${R-32},${Y-40}" fill="${N}"/>`,
+  half: () => c(L, Y, 26) + c(R, Y, 26) + `<rect x="${L-32}" y="${Y-40}" width="${R-L+64}" height="40" fill="${N}"/>`,
+  dizzy: () => [L, R].map(x => { let d = ""; for (let i = 0; i <= 700; i += 10){ const t = i * Math.PI / 180, r = 3 + i * 0.034; d += (i ? " L" : "M") + (x + r * Math.cos(t)).toFixed(1) + " " + (Y + r * Math.sin(t)).toFixed(1); } return `<path d="${d}" stroke="${W}" stroke-width="7.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`; }).join("")
+};
+function yud(expr){ return `<svg viewBox="-40 10 370 480" width="760" height="986"><g fill="${W}" stroke="${W}" stroke-width="18" stroke-linejoin="round"><use href="#yud"/></g><g fill="${N}" stroke="${N}" stroke-width="6" stroke-linejoin="round"><use href="#yud"/></g>${eyes[expr]()}</svg>`; }
+const params = new URLSearchParams(location.search);
+const expr = params.get("e") || "calm", paper = params.get("bg") !== "none";
+document.getElementById("out").innerHTML = `<div class="cell ${paper ? "paper" : ""}">${yud(expr)}</div>`;
+</script></body></html>

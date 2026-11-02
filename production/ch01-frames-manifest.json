@@ -1,5 +1,5 @@
 {
- "note": "Chapter 1 storyboard frames generated on Higgsfield; fetched and compressed by .github/workflows/fetch-ch01-frames.yml",
+ "note": "Chapter 1 storyboard frames generated on Higgsfield; fetched and compressed by .github/workflows/fetch-ch01-frames.yml Frames named *_Y are version C with the redesigned letter-shaped Yud (picked edit); *_Yalt is the other model's edit.",
  "frames": [
   {
    "index": 0,
@@ -536,6 +536,262 @@
    "model": "Seedream 5 Pro",
    "name": "p16_D",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261016_172026_017c6f2c-595b-47a1-9c14-7dad594d6382.png"
+  },
+  {
+   "index": 2001,
+   "page": "cover",
+   "variant": "Y",
+   "model": "GPT Image 2.5 edit",
+   "name": "cover_Y",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162816_1c8be18c-06f8-4a5f-815e-d19067a99513.png"
+  },
+  {
+   "index": 2002,
+   "page": "cover",
+   "variant": "Yalt",
+   "model": "Nano Banana Pro edit",
+   "name": "cover_Yalt",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162816_dc339733-08a1-42f5-8b6a-940223f05c23.png"
+  },
+  {
+   "index": 2012,
+   "page": "p01",
+   "variant": "Y",
+   "model": "Nano Banana Pro edit",
+   "name": "p01_Y",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162816_a5771f34-8adf-4bbc-8bbf-1c3fafad24a1.png"
+  },
+  {
+   "index": 2011,
+   "page": "p01",
+   "variant": "Yalt",
+   "model": "GPT Image 2.5 edit",
+   "name": "p01_Yalt",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162817_87befde2-3366-4e40-86b4-d280405e018b.png"
+  },
+  {
+   "index": 2022,
+   "page": "p02",
+   "variant": "Y",
+   "model": "Nano Banana Pro edit",
+   "name": "p02_Y",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162816_e5fb75fb-eb3f-4244-b2bf-676cb88b65b5.png"
+  },
+  {
+   "index": 2021,
+   "page": "p02",
+   "variant": "Yalt",
+   "model": "GPT Image 2.5 edit",
+   "name": "p02_Yalt",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162816_62bb3e57-ed0e-454f-9bcd-5f9b29ab6e75.png"
+  },
+  {
+   "index": 1031,
+   "page": "p03",
+   "variant": "Y",
+   "model": "GPT Image 2.5 edit",
+   "name": "p03_Y",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162449_48f5d839-ce08-412b-9461-8674282157e7.png"
+  },
+  {
+   "index": 1032,
+   "page": "p03",
+   "variant": "Yalt",
+   "model": "Nano Banana Pro edit",
+   "name": "p03_Yalt",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162449_4d3d204a-98e1-40a0-bd86-375425744319.png"
+  },
+  {
+   "index": 2042,
+   "page": "p04",
+   "variant": "Y",
+   "model": "Nano Banana Pro edit",
+   "name": "p04_Y",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162817_b862ec12-6d12-48f7-8fd9-55b0c1397be0.png"
+  },
+  {
+   "index": 2041,
+   "page": "p04",
+   "variant": "Yalt",
+   "model": "GPT Image 2.5 edit",
+   "name": "p04_Yalt",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162817_f5c4b312-62cb-4ec8-a8a9-bc1afec72e55.png"
+  },
+  {
+   "index": 2052,
+   "page": "p05",
+   "variant": "Y",
+   "model": "Nano Banana Pro edit",
+   "name": "p05_Y",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162816_d7200518-940f-47cd-841e-d32a66310905.png"
+  },
+  {
+   "index": 2051,
+   "page": "p05",
+   "variant": "Yalt",
+   "model": "GPT Image 2.5 edit",
+   "name": "p05_Yalt",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162817_ddbd3b24-abfa-46f2-9e63-ff6ce134bf37.png"
+  },
+  {
+   "index": 2061,
+   "page": "p06",
+   "variant": "Y",
+   "model": "GPT Image 2.5 edit",
+   "name": "p06_Y",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162816_f39ef792-eb57-4287-b640-eb70e109ec53.png"
+  },
+  {
+   "index": 2062,
+   "page": "p06",
+   "variant": "Yalt",
+   "model": "Nano Banana Pro edit",
+   "name": "p06_Yalt",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162816_aba8c267-6cd4-42e1-b8ff-31a2f34ad39e.png"
+  },
+  {
+   "index": 1071,
+   "page": "p07",
+   "variant": "Y",
+   "model": "GPT Image 2.5 edit",
+   "name": "p07_Y",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162449_04e3d5e2-c07e-4af0-bd94-4c9c76ab989c.png"
+  },
+  {
+   "index": 1072,
+   "page": "p07",
+   "variant": "Yalt",
+   "model": "Nano Banana Pro edit",
+   "name": "p07_Yalt",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162449_d0545209-ad78-429f-8379-76b91c7c3b89.png"
+  },
+  {
+   "index": 2082,
+   "page": "p08",
+   "variant": "Y",
+   "model": "Nano Banana Pro edit",
+   "name": "p08_Y",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162908_40130371-f716-45ab-a979-6d774c0718dc.png"
+  },
+  {
+   "index": 2081,
+   "page": "p08",
+   "variant": "Yalt",
+   "model": "GPT Image 2.5 edit",
+   "name": "p08_Yalt",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162908_e7248d07-1db5-4919-9063-58e02aaee49b.png"
+  },
+  {
+   "index": 2092,
+   "page": "p09",
+   "variant": "Y",
+   "model": "Nano Banana Pro edit",
+   "name": "p09_Y",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162908_d2f3fa1a-b7ed-4543-a159-79148b449317.png"
+  },
+  {
+   "index": 2091,
+   "page": "p09",
+   "variant": "Yalt",
+   "model": "GPT Image 2.5 edit",
+   "name": "p09_Yalt",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162909_f4f93e2d-efaa-4e26-9792-0e8a25475fa4.png"
+  },
+  {
+   "index": 2101,
+   "page": "p10",
+   "variant": "Y",
+   "model": "GPT Image 2.5 edit",
+   "name": "p10_Y",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162910_696768b3-6216-4f14-9574-1a26981cb8c9.png"
+  },
+  {
+   "index": 2102,
+   "page": "p10",
+   "variant": "Yalt",
+   "model": "Nano Banana Pro edit",
+   "name": "p10_Yalt",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162908_6f665dd8-c83e-42fc-8eb2-dbec4ed8bd4e.png"
+  },
+  {
+   "index": 2111,
+   "page": "p11",
+   "variant": "Y",
+   "model": "GPT Image 2.5 edit",
+   "name": "p11_Y",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162910_f77c42a6-da8f-47ed-a927-a3bb63ac3208.png"
+  },
+  {
+   "index": 2112,
+   "page": "p11",
+   "variant": "Yalt",
+   "model": "Nano Banana Pro edit",
+   "name": "p11_Yalt",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162908_20bdaf16-87cc-4aa5-ab3a-01f23b942eeb.png"
+  },
+  {
+   "index": 2131,
+   "page": "p13",
+   "variant": "Y",
+   "model": "GPT Image 2.5 edit",
+   "name": "p13_Y",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162908_11923d2f-51be-4eee-9d90-dff828a51624.png"
+  },
+  {
+   "index": 2132,
+   "page": "p13",
+   "variant": "Yalt",
+   "model": "Nano Banana Pro edit",
+   "name": "p13_Yalt",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162908_5153a275-4f76-4f97-a289-a28098282627.png"
+  },
+  {
+   "index": 2141,
+   "page": "p14",
+   "variant": "Y",
+   "model": "GPT Image 2.5 edit",
+   "name": "p14_Y",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162911_d17c6e3f-0101-4cc9-9d77-28c9f92176f1.png"
+  },
+  {
+   "index": 2142,
+   "page": "p14",
+   "variant": "Yalt",
+   "model": "Nano Banana Pro edit",
+   "name": "p14_Yalt",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162908_f01f5f90-64e6-4a85-8e83-366c4d1f33ae.png"
+  },
+  {
+   "index": 2152,
+   "page": "p15",
+   "variant": "Y",
+   "model": "Nano Banana Pro edit",
+   "name": "p15_Y",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162942_3bb80d7a-1c12-436c-9af3-a912cbd3093a.png"
+  },
+  {
+   "index": 2151,
+   "page": "p15",
+   "variant": "Yalt",
+   "model": "GPT Image 2.5 edit",
+   "name": "p15_Yalt",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162943_72ac6e08-d91a-4362-b64d-a336cda77827.png"
+  },
+  {
+   "index": 2162,
+   "page": "p16",
+   "variant": "Y",
+   "model": "Nano Banana Pro edit",
+   "name": "p16_Y",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162942_837799b2-fd59-4879-8d9c-71ae630a5bb0.png"
+  },
+  {
+   "index": 2161,
+   "page": "p16",
+   "variant": "Yalt",
+   "model": "GPT Image 2.5 edit",
+   "name": "p16_Yalt",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261101_162942_9c2a8a73-62e2-4b2b-a46d-d472c54c659b.png"
   }
  ]
 }

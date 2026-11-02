@@ -46,7 +46,7 @@ header.top{flex:none;display:flex;align-items:center;justify-content:space-betwe
 .t-series{font-size:12px;letter-spacing:.08em;color:var(--chrome-soft)}
 .t-book{font-family:var(--serif);font-weight:700;font-size:21px;line-height:1.2}
 .eds-block{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
-.eds{display:flex;align-items:center;gap:6px}
+.eds{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:6px}
 .eds-label{font-size:13px;color:var(--chrome-soft);margin-inline-end:2px}
 .chip{border:1px solid var(--chip-line);background:var(--chip);border-radius:999px;min-width:40px;height:34px;padding:0 12px;font-size:14px;font-weight:600;cursor:pointer;font-variant-numeric:tabular-nums}
 .chip[aria-pressed="true"]{background:var(--chip-on);border-color:var(--chip-on);color:var(--chip-on-ink)}
@@ -174,6 +174,8 @@ nav.bar{flex:none;display:flex;align-items:center;justify-content:center;gap:10p
   .title-block{display:none}
   header.top{justify-content:center}
   .eds-block{align-items:center}
+  .eds{justify-content:center}
+  .eds-label{display:none}
   .nav .lbl{display:none}
   .nav{width:44px;padding:0;justify-content:center}
   .pos{min-width:7.5em}
@@ -229,6 +231,7 @@ const END = P.length;                 // one more spread after the last page: th
 const HEB = ["","א׳","ב׳","ג׳","ד׳","ה׳","ו׳","ז׳","ח׳","ט׳","י׳","י״א","י״ב","י״ג","י״ד","ט״ו","ט״ז"];
 const NAMES = P.map(p => p.id).concat(["end"]);
 const EDS = [
+  {id:"Y", label:"יוד חדשה", cap:"גרסה C עם היוד החדשה, בצורת האות", fallback:"C"},
   {id:"rec", label:"מומלצת", cap:"בכל עמוד: הגרסה שהמלצתי עליה"},
   {id:"A", label:"A", cap:"גרסה A · Nano Banana Pro"},
   {id:"B", label:"B", cap:"גרסה B · Nano Banana 2.1"},
@@ -239,17 +242,23 @@ const DUR = 760, EASE = "cubic-bezier(.32,.06,.2,1)";
 const reduce = matchMedia("(prefers-reduced-motion: reduce)");
 const $ = s => document.querySelector(s);
 const stage = $("#stage"), book = $("#book");
-let idx = 0, ed = "rec", mode = "single", size = {pw:0, ph:0}, sizeKey = "", busy = false, lastOpener = null;
+let idx = 0, ed = "Y", mode = "single", size = {pw:0, ph:0}, sizeKey = "", busy = false, lastOpener = null;
 
 function el(tag, cls, text){ const e = document.createElement(tag); if(cls) e.className = cls; if(text != null) e.textContent = text; return e; }
-function variant(p){ return ed === "rec" ? p.rec : (p.v.includes(ed) ? ed : p.rec); }
+function variant(p){
+  if(ed === "rec") return p.rec;
+  if(p.v.includes(ed)) return ed;
+  const e = EDS.find(x => x.id === ed);
+  return e && e.fallback && p.v.includes(e.fallback) ? e.fallback : p.rec;
+}
+function vname(v){ return v === "Y" ? "C עם היוד החדשה" : v; }
 function src(p, kind){ return kind === "thumb" ? `img/thumb/${p.id}_${variant(p)}.jpg` : `img/full/${p.id}_${variant(p)}.webp`; }
 function tidy(s){ return s.replace(/ —/g, "\u00a0—"); }
 function pageName(i){ return i === 0 ? "הכריכה" : `עמוד ${i}`; }
 
 function art(p){
   const i = new Image();
-  i.className = "art"; i.alt = `איור ל${pageName(P.indexOf(p))}, גרסה ${variant(p)}`; i.draggable = false; i.decoding = "async";
+  i.className = "art"; i.alt = `איור ל${pageName(P.indexOf(p))}, גרסה ${vname(variant(p))}`; i.draggable = false; i.decoding = "async";
   const done = () => i.classList.add("ready");
   i.addEventListener("load", done, {once:true}); i.addEventListener("error", done, {once:true});
   i.src = src(p);
@@ -259,6 +268,7 @@ function art(p){
 function vtag(p){
   const v = variant(p);
   if(ed !== "rec" && v === ed) return null;
+  if(ed === "Y") return null;   // the only page without the new Yud is page 12, which has no Yud at all
   return el("span", "vtag", ed === "rec" ? `גרסה ${v}` : `גרסה ${v} · אין ${ed} לעמוד הזה`);
 }
 function wordplay(){
@@ -451,10 +461,10 @@ function updateBar(){
   for(const b of document.querySelectorAll(".chip")) b.setAttribute("aria-pressed", b.dataset.ed === ed ? "true" : "false");
   $("#edCap").textContent = EDS.find(e => e.id === ed).cap;
 }
-function save(){ try{ localStorage.setItem("yud-reader-ch01", JSON.stringify({idx, ed})); }catch(e){} }
+function save(){ try{ localStorage.setItem("yud-reader-ch01-v2", JSON.stringify({idx, ed})); }catch(e){} }
 function restore(){
   try{
-    const s = JSON.parse(localStorage.getItem("yud-reader-ch01") || "null");
+    const s = JSON.parse(localStorage.getItem("yud-reader-ch01-v2") || "null");
     if(s && EDS.some(e => e.id === s.ed)) ed = s.ed;
     if(s && Number.isInteger(s.idx) && s.idx >= 0 && s.idx <= END) idx = s.idx;
   }catch(e){}

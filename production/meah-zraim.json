@@ -114,5 +114,15 @@
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_165420_2e009c86-f5e2-4894-92e0-3121c2e5e096.png",
   "why": "GPT sheet 1: textured paper, gold line, Persian border; all five characters on-brief"
  },
- "index_scheme": "3000 + page*10 + variant (1,2); cover = page 0; all gpt_image_2_5 xhigh 2k 3:4 with the character sheet as image 1"
+ "index_scheme": "3000 + page*10 + variant (1,2); cover = page 0; all gpt_image_2_5 xhigh 2k 3:4 with the character sheet as image 1",
+ "qa_round1": {
+  "problem": "Passing the whole cast sheet made the model put all five characters into almost every page (king and sages at Amitai's door, princess receiving the seed, royals in the parade).",
+  "keep": {
+   "p09": "3092",
+   "p15": "3151",
+   "p17": "3171",
+   "p18": "3181"
+  },
+  "fix": "Per-character reference crops (assets/ref/meah-zraim/*.png); each page gets only the references of the characters in it; pages with no main character get no reference."
+ }
 }

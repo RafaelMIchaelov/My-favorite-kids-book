@@ -142,21 +142,21 @@
   "cover": "cover_r2_1",
   "p01": "p01_r2_1",
   "p02": "p02_r2_2",
-  "p03": "p03_r2_1",
-  "p04": "p04_r2_1",
-  "p05": "p05_r2_1",
-  "p06": "p06_r2_2",
+  "p03": "p03_r3_1",
+  "p04": "p04_r3_1",
+  "p05": "p05_r3_1",
+  "p06": "p06_r3_1",
   "p07": "p07_r2_1",
-  "p08": "p08_r2_1",
+  "p08": "p08_r3_2",
   "p09": "p09_2",
-  "p10": "p10_r2_1",
-  "p11": "p11_r2_1",
-  "p12": "p12_r2_1",
-  "p13": "p13_r2_2",
-  "p14": "p14_r2_1",
-  "p15": "p15_1",
-  "p16": "p16_r2_1",
-  "p17": "p17_1",
+  "p10": "p10_r3_1",
+  "p11": "p11_r3_1",
+  "p12": "p12_r3_3",
+  "p13": "p13_r3_1",
+  "p14": "p14_r3_1",
+  "p15": "p15_r3_1",
+  "p16": "p16_r3_1",
+  "p17": "p17_r3_1",
   "p18": "p18_1"
  },
  "sheet_pick": {
@@ -237,7 +237,7 @@
  "reader": {
   "source": "production/reader-meah-zraim/index.html",
   "artifact_url": "https://claude.ai/artifact/Jfp52agBsYGaam2rPTYPXR",
-  "published": "2026-11-04"
+  "published": "2026-11-04 (version 2: boys only, three leaves, flowers in pots, digit page numbers, three-leaf ornament)"
  },
  "round3": {
   "index_scheme": "5000 + page*10 + v; v1 = gpt_image_2_5 xhigh 2k 3:4 edit, v2 = nano_banana_pro 2k 3:4 edit; image 1 = the picked page job, image 2 (leaf pages) = sprout3 media",
@@ -326,12 +326,38 @@
    "p08": "r3_1 turned the window girl into a boy in a white tunic and blue sash, which reads as Amitai with a growing plant (he only has soil at this point); pick r3_2: all boys, seller an old man, the swap still visible",
    "p10": "both three leaves; pick r3_1 (small fresh leaves)",
    "p11": "r3_2 puts a curly boy in a white tunic (Amitai look-alike) in the parade; pick r3_1: all boys, all pots",
-   "p12": "r3_1: three leaves, boys carry pots, but the yellow-tunic boy holds a pot with a small plant; follow-up edit 5123/5124 from r3_1. r3_2 rejected: yellow boy holds a cut iris",
+   "p12": "r3_1: three leaves, boys carry pots, but the yellow-tunic boy holds a pot with a small plant; follow-up edit 5123/5124 from r3_1. r3_2 rejected: yellow boy holds a cut iris; follow-up: r3_3 (GPT) gives the yellow boy the giant iris in his own pot, Amitai keeps three leaves; r3_4 leaves a stray petal on his face. Pick r3_3",
    "p13": "both all boys with flowers in pots; pick r3_1",
    "p14": "both three leaves, scene unchanged; pick r3_1",
    "p15": "both three leaves and all boys; pick r3_1",
    "p16": "r3_2 still has a girl (headscarf, braid) and only two leaves; pick r3_1",
    "p17": "pick r3_1: exactly three leaves"
   }
- }
+ },
+ "picks_history": [
+  {
+   "when": "before round 3",
+   "picks": {
+    "cover": "cover_r2_1",
+    "p01": "p01_r2_1",
+    "p02": "p02_r2_2",
+    "p03": "p03_r2_1",
+    "p04": "p04_r2_1",
+    "p05": "p05_r2_1",
+    "p06": "p06_r2_2",
+    "p07": "p07_r2_1",
+    "p08": "p08_r2_1",
+    "p09": "p09_2",
+    "p10": "p10_r2_1",
+    "p11": "p11_r2_1",
+    "p12": "p12_r2_1",
+    "p13": "p13_r2_2",
+    "p14": "p14_r2_1",
+    "p15": "p15_1",
+    "p16": "p16_r2_1",
+    "p17": "p17_1",
+    "p18": "p18_1"
+   }
+  }
+ ]
 }

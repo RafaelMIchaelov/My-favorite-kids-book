@@ -1,5 +1,5 @@
 {
- "note": "Illustrations for the book מאה זרעים, generated on Higgsfield (GPT Image 2.5) with the cast sheet as reference; fetched and compressed by .github/workflows/fetch-meah-zraim-frames.yml",
+ "note": "Illustrations for the book מאה זרעים, generated on Higgsfield (GPT Image 2.5) with the cast sheet as reference; fetched and compressed by .github/workflows/fetch-meah-zraim-frames.yml. Round 3 (r3) = edits: boys only, three leaves, flowers in pots.",
  "frames": [
   {
    "name": "sheet",
@@ -276,6 +276,110 @@
   {
    "name": "p16_r2_2",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_224409_5c03ac6a-afc5-403b-bea2-71b2bf76a513.png"
+  },
+  {
+   "name": "p03_r3_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231615_16f7a023-51d6-4e63-b548-ae7f09c8dd54.png"
+  },
+  {
+   "name": "p03_r3_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231615_bf092b67-3a12-4117-960b-80a1fd0a3a41.png"
+  },
+  {
+   "name": "p04_r3_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231615_7c81b68a-f8aa-4643-ae6e-aca7034d1015.png"
+  },
+  {
+   "name": "p04_r3_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231615_9d4b22a8-347b-4e77-a91a-de175b0e1287.png"
+  },
+  {
+   "name": "p05_r3_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231616_c4c44b83-49a0-4fde-9148-50d28930621d.png"
+  },
+  {
+   "name": "p05_r3_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231615_4aa1e749-a0ae-40c9-872f-9db00843155f.png"
+  },
+  {
+   "name": "p06_r3_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231616_c754ae4a-ed10-4fb4-b720-efdf45dd7864.png"
+  },
+  {
+   "name": "p06_r3_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231615_e1801343-5601-47d7-a3d0-2ec3724da473.png"
+  },
+  {
+   "name": "p08_r3_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231617_2c45b16f-5816-4001-8b1e-0059811f09f7.png"
+  },
+  {
+   "name": "p08_r3_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231615_dc417507-9f1d-4aad-acd6-62491bb3859a.png"
+  },
+  {
+   "name": "p10_r3_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231615_362f07a3-6dea-4f25-90f0-131bca620107.png"
+  },
+  {
+   "name": "p10_r3_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231616_1c4c1cf3-7c0c-4575-a024-c73f63eb1b1b.png"
+  },
+  {
+   "name": "p11_r3_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231711_df3078e2-b4b7-4285-8a1b-02c183313b0b.png"
+  },
+  {
+   "name": "p11_r3_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231711_02dd2ca3-ce04-4c79-9b5d-500d67bec46b.png"
+  },
+  {
+   "name": "p12_r3_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231712_604c4e80-4d90-4b58-86af-20745552ca90.png"
+  },
+  {
+   "name": "p12_r3_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231712_9fdf7e34-e167-4466-a3db-f09f4e22c843.png"
+  },
+  {
+   "name": "p13_r3_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231713_3653332a-2385-4d25-9ddb-f7e3900f86f9.png"
+  },
+  {
+   "name": "p13_r3_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231712_4183b42c-e188-464c-8a85-fb0ba9d65555.png"
+  },
+  {
+   "name": "p14_r3_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231712_d40fa2bc-fe4e-430d-b13c-18c72f5a822c.png"
+  },
+  {
+   "name": "p14_r3_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231711_d6e186e7-5c66-472c-a9c2-f17c7e79df0b.png"
+  },
+  {
+   "name": "p15_r3_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231714_d0851b4c-cebc-4aff-8ab4-92f5fcc92c71.png"
+  },
+  {
+   "name": "p15_r3_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231712_a20e3d25-2643-45e1-a0f9-6c3480b64762.png"
+  },
+  {
+   "name": "p16_r3_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231712_f38bd7da-886d-44cc-b9ce-97248a933638.png"
+  },
+  {
+   "name": "p16_r3_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231711_c535e8fe-beda-4211-991f-6c1714b36add.png"
+  },
+  {
+   "name": "p17_r3_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231731_249d33eb-61c9-470c-b180-9328505fc53b.png"
+  },
+  {
+   "name": "p17_r3_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231731_d98f9ae6-b227-4f1c-9688-0f5942fd3eb8.png"
   }
  ]
 }

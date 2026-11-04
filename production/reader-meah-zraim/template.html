@@ -224,11 +224,11 @@ nav.bar{flex:none;display:flex;align-items:center;justify-content:center;gap:10p
 
 <script>
 const DATA = __DATA__;
-const SPROUT = '<svg viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true"><path d="M12 22V9" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M12 14C8 13.5 5.5 11 6 7.5c3.5.3 6 2.8 6 6.5z" fill="currentColor"/><path d="M12 11c4-.5 6.5-3 6-6.5-3.5.3-6 2.8-6 6.5z" fill="currentColor"/><path d="M12 9c-1.6-2-1.5-4.6.2-6.6 1.7 2 1.6 4.6-.2 6.6z" fill="currentColor"/></svg>';
-const POT = '<svg viewBox="0 0 120 140" aria-hidden="true"><path d="M60 80V36" stroke="#5E7A3A" stroke-width="3.2" fill="none" stroke-linecap="round"/><path d="M60 54C46 50 37 40 39 29c12 2 21 12 21 25z" fill="#7FA24F"/><path d="M60 46c14-4 23-14 21-25-12 2-21 12-21 25z" fill="#8DB25A"/><path d="M60 36c-6-9-5-21 2-28 7 8 6 20-2 28z" fill="#9CC266"/><path d="M30 80h60l-6 48c0 4-4 6-8 6H44c-4 0-8-2-8-6z" fill="#C8693F"/><rect x="26" y="72" width="68" height="12" rx="3" fill="#B85A33"/><rect x="33" y="98" width="54" height="7" fill="#2F4F8F"/></svg>';
+const SPROUT = '<svg viewBox="0 0 32 32" width="1.35em" height="1.35em" aria-hidden="true"><path d="M16 31C16.2 25 15.4 18 16.8 9.5" stroke="#4A6A2C" stroke-width="1.5" fill="none" stroke-linecap="round"/><path d="M16.1 23.5C12.4 24.6 6.2 22.6 3.4 16.4c5.3-1.7 10.9.5 12.7 7.1z" fill="#4F7B34"/><path d="M16.1 23.5C12.6 20.6 8.4 18.2 4.2 16.6" stroke="#3A5A24" stroke-width=".6" fill="none" opacity=".65"/><path d="M16.4 17.6c3.6 1.2 9.8-.4 12.4-6.8-5.2-1.6-10.9.6-12.4 6.8z" fill="#5E8C3E"/><path d="M16.4 17.6c3.4-2.6 7.6-5 11.6-6.6" stroke="#3A5A24" stroke-width=".6" fill="none" opacity=".65"/><path d="M16.8 10.2c-2.4-3.2-1.6-7.8 2.4-9.8 1.9 4.1.6 8.4-2.4 9.8z" fill="#6E9F4A"/><path d="M16.8 10.2c.4-3.3 1.2-6.6 2.3-9.4" stroke="#3A5A24" stroke-width=".6" fill="none" opacity=".65"/></svg>';
+const POT = '<svg viewBox="0 0 120 150" aria-hidden="true"><path d="M41 75c-8.5 8-15 18.5-15 31 0 21.5 15 36 34 36s34-14.5 34-36c0-12.5-6.5-23-15-31z" fill="#C8693F"/><ellipse cx="45" cy="92" rx="5" ry="11" fill="#FFF4E2" opacity=".14"/><path d="M27.4 96H92.6c1.2 4.6 1.6 9.2 1.3 14H26.1c-.3-4.8.1-9.4 1.3-14z" fill="#2F4F8F"/><path d="M31 106.5l5-6.5 5 6.5 5-6.5 5 6.5 5-6.5 5 6.5 5-6.5 5 6.5 5-6.5 5 6.5 5-6.5 5 6.5" stroke="#E9C46A" stroke-width="1.8" fill="none" stroke-linejoin="round"/><path d="M36 66c0-2.8 2.2-5 5-5h38c2.8 0 5 2.2 5 5v5c0 2.2-1.8 4-4 4H40c-2.2 0-4-1.8-4-4z" fill="#B65A30"/><ellipse cx="60" cy="63.6" rx="20" ry="2.8" fill="#5A3A22"/><path d="M60 64C60.6 52 58.8 40 62 23" stroke="#4A6A2C" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M60 54C49 57 31 51 24 34c15-5 31 1 36 20z" fill="#4F7B34"/><path d="M60 54C50 46 38 40 26 35" stroke="#3A5A24" stroke-width="1.2" fill="none" opacity=".65"/><path d="M60.6 41c10 3.5 28-1 35.4-19-15-4.5-31 1.5-35.4 19z" fill="#5E8C3E"/><path d="M60.6 41c9.5-7.5 22-14 34-18.5" stroke="#3A5A24" stroke-width="1.2" fill="none" opacity=".65"/><path d="M62 25c-6.5-9-4.4-20.5 7-23 5 11 1.5 21-7 23z" fill="#6E9F4A"/><path d="M62 25c1-8 3-15.5 6.6-22.4" stroke="#3A5A24" stroke-width="1.2" fill="none" opacity=".65"/></svg>';
 const P = DATA.pages;                 // 0 = the cover, 1..18 = the story pages
 const END = P.length;                 // one more spread after the last page: the closing pages
-const HEB = ["","א׳","ב׳","ג׳","ד׳","ה׳","ו׳","ז׳","ח׳","ט׳","י׳","י״א","י״ב","י״ג","י״ד","ט״ו","ט״ז","י״ז","י״ח"];
+const NUM = i => String(i);  // page numbers are shown as digits
 const NAMES = P.map(p => p.id).concat(["end"]);
 const DUR = 760, EASE = "cubic-bezier(.32,.06,.2,1)";
 const reduce = matchMedia("(prefers-reduced-motion: reduce)");
@@ -267,7 +267,7 @@ function wordsFace(i){
   const orn = el("span", "orn"); orn.innerHTML = SPROUT; w.append(orn);
   w.append(p.text ? el("p", "line", tidy(p.text)) : el("p", "line quiet", "עַמּוּד בְּלִי מִלִּים"));
   if(p.layers.length){ const b = el("button", "parents", "לַהוֹרִים: מָה מִסְתַּתֵּר כָּאן"); b.type = "button"; b.dataset.page = i; w.append(b); }
-  f.append(w, el("span", "folio", HEB[i]));
+  f.append(w, el("span", "folio", NUM(i)));
   return f;
 }
 function pot(){ const d = el("div", "pot"); d.innerHTML = POT; return d; }
@@ -450,7 +450,7 @@ function closeDialogs(){
 function dialogOpen(){ return !$("#sheet").hidden || !$("#toc").hidden; }
 function openLayers(i, opener){
   const p = P[i];
-  $("#sheetTitle").textContent = `לַהוֹרִים · עַמּוּד ${HEB[i]}`;
+  $("#sheetTitle").textContent = `לַהוֹרִים · עַמּוּד ${NUM(i)}`;
   $("#sheetSrc").textContent = p.source ? "מקור: " + p.source : "";
   const dl = $("#sheetLayers"); dl.replaceChildren();
   for(const [k, t] of p.layers) dl.append(el("dt", null, k), el("dd", null, t));
@@ -463,7 +463,7 @@ function openToc(opener){
     if(i === idx) b.setAttribute("aria-current", "page");
     if(i < END){ const im = new Image(); im.loading = "lazy"; im.alt = ""; im.src = src(P[i], "thumb"); b.append(im); }
     else { const d = el("span", "toc-end"); d.innerHTML = POT; b.append(d); }
-    b.append(el("span", "toc-label", i === 0 ? "כְּרִיכָה" : i === END ? "סוֹף" : HEB[i]));
+    b.append(el("span", "toc-label", i === 0 ? "כְּרִיכָה" : i === END ? "סוֹף" : NUM(i)));
     b.setAttribute("aria-label", i === 0 ? "הכריכה" : i === END ? "סוף הספר" : `עמוד ${i}`);
     b.addEventListener("click", () => { closeDialogs(); jump(i); });
     g.append(b);

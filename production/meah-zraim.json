@@ -138,7 +138,27 @@
   "4161": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_224409_4dd18f02-5999-459a-a9b1-ba032aa16c57.png",
   "4162": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_224409_5c03ac6a-afc5-403b-bea2-71b2bf76a513.png"
  },
- "picks": {},
+ "picks": {
+  "cover": "cover_r2_1",
+  "p01": "p01_r2_1",
+  "p02": "p02_r2_2",
+  "p03": "p03_r2_1",
+  "p04": "p04_r2_1",
+  "p05": "p05_r2_1",
+  "p06": "p06_r2_2",
+  "p07": "p07_r2_1",
+  "p08": "p08_r2_1",
+  "p09": "p09_2",
+  "p10": "p10_r2_1",
+  "p11": "p11_r2_1",
+  "p12": "p12_r2_1",
+  "p13": "p13_r2_2",
+  "p14": "p14_r2_1",
+  "p15": "p15_1",
+  "p16": "p16_r2_1",
+  "p17": "p17_1",
+  "p18": "p18_1"
+ },
  "sheet_pick": {
   "job": "2e009c86-f5e2-4894-92e0-3121c2e5e096",
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_165420_2e009c86-f5e2-4894-92e0-3121c2e5e096.png",
@@ -212,5 +232,11 @@
    "4161": "4dd18f02-5999-459a-a9b1-ba032aa16c57",
    "4162": "5c03ac6a-afc5-403b-bea2-71b2bf76a513"
   }
+ },
+ "qa_round2": "Per-character references fixed the cast problem: every redrawn page shows only its characters (village girl receives the seed, mother in indigo and ochre, royals only at the palace).",
+ "reader": {
+  "source": "production/reader-meah-zraim/index.html",
+  "artifact_url": "https://claude.ai/artifact/Jfp52agBsYGaam2rPTYPXR",
+  "published": "2026-11-04"
  }
 }

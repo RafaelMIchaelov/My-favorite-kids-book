@@ -1,0 +1,161 @@
+{
+ "note": "Illustrations for the book מאה זרעים, generated on Higgsfield (GPT Image 2.5) with the cast sheet as reference; fetched and compressed by .github/workflows/fetch-meah-zraim-frames.yml",
+ "frames": [
+  {
+   "name": "sheet",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_165420_2e009c86-f5e2-4894-92e0-3121c2e5e096.png"
+  },
+  {
+   "name": "cover_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223200_58b75c10-c5d6-48ca-8cd8-ea0cfffb9bfb.png"
+  },
+  {
+   "name": "cover_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223201_a125485f-5232-4b1e-b239-e4e77837d3ef.png"
+  },
+  {
+   "name": "p01_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223201_0f6698a3-0783-4cc2-a38e-64e78fcb29a5.png"
+  },
+  {
+   "name": "p01_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223159_b20c8cfd-c8a3-4914-9711-a9d173565278.png"
+  },
+  {
+   "name": "p02_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223158_64e8ce1a-d510-4afb-9647-90343d39aef3.png"
+  },
+  {
+   "name": "p02_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223158_33857ebc-3331-4872-905e-2bd3d5cc5e3c.png"
+  },
+  {
+   "name": "p03_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223200_1641c646-b357-4b7b-9729-982ac517bf2a.png"
+  },
+  {
+   "name": "p03_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223157_e1333c2f-2748-4100-ab04-1527a6281cfd.png"
+  },
+  {
+   "name": "p04_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223158_f0cb1173-1389-4f35-bafe-93177320291f.png"
+  },
+  {
+   "name": "p04_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223156_237cafc9-630b-40d2-9c46-2003b1d8a49d.png"
+  },
+  {
+   "name": "p05_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223200_ca48cba6-2324-4a61-86c3-08349007f907.png"
+  },
+  {
+   "name": "p05_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223159_8ce6a61a-af6f-4e93-9854-0067d4cf9516.png"
+  },
+  {
+   "name": "p06_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223311_6b7ef8ea-3d60-4440-8777-a3f2fbdd6fe2.png"
+  },
+  {
+   "name": "p06_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223311_67269ffb-3051-4433-b8a9-877ddc194dae.png"
+  },
+  {
+   "name": "p07_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223313_f9f6902a-affe-410f-bfc4-cf66ae537fe5.png"
+  },
+  {
+   "name": "p07_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223314_7b11b271-1dc4-48c4-837f-f4a27bc9ceb6.png"
+  },
+  {
+   "name": "p08_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223311_7c7df049-0ea0-4e31-943c-794cc437744b.png"
+  },
+  {
+   "name": "p08_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223314_bb1baef8-7e61-4bea-8a27-b1d2a8a9f483.png"
+  },
+  {
+   "name": "p09_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223315_59cb9a1f-f7ca-459c-ad13-d5e56dbff05d.png"
+  },
+  {
+   "name": "p09_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223311_a3ce4739-c667-4ae0-807d-f4764d524e83.png"
+  },
+  {
+   "name": "p10_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223314_8387f56f-ad4f-4f9c-bd53-26386b52b191.png"
+  },
+  {
+   "name": "p10_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223313_d5cb9eb8-e7b3-461f-be88-690f6fd53b02.png"
+  },
+  {
+   "name": "p11_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223313_73964511-678c-41fd-badf-f6081af55bfb.png"
+  },
+  {
+   "name": "p11_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223312_66759190-b7e7-4cf6-933c-bb3c3de9115f.png"
+  },
+  {
+   "name": "p12_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223425_c96159c4-f3ab-4029-bd2e-c98a553e559b.png"
+  },
+  {
+   "name": "p12_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223426_1ff9c805-c6e7-46af-a66c-291053014117.png"
+  },
+  {
+   "name": "p13_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223424_83344216-76bb-4fb0-8b91-9001c5e2fe75.png"
+  },
+  {
+   "name": "p13_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223425_3fdb7216-35c2-4b0b-9e2f-d8fd7b2babbc.png"
+  },
+  {
+   "name": "p14_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223428_6da99e2c-f25b-467e-a89d-69d3125ba1f7.png"
+  },
+  {
+   "name": "p14_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223425_f80575ad-1078-49a8-a18c-e9bb994df9b9.png"
+  },
+  {
+   "name": "p15_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223427_78c67d58-3411-4d93-abb2-db5318a54be7.png"
+  },
+  {
+   "name": "p15_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223426_aab03373-68ff-4921-8bd1-3731d8fc9a43.png"
+  },
+  {
+   "name": "p16_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223425_948067af-0d16-4705-90a6-7c6a7b41eec2.png"
+  },
+  {
+   "name": "p16_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223426_cba8f851-8d8b-4f19-9ac7-e6f83829aef4.png"
+  },
+  {
+   "name": "p17_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223427_a26785ac-40b7-4785-9bf5-f46e722a7fc3.png"
+  },
+  {
+   "name": "p17_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223427_928b3ae3-9279-4e9d-b9e0-ff7a5bfab796.png"
+  },
+  {
+   "name": "p18_1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223456_9d90797a-f28e-480e-923a-f5809873304f.png"
+  },
+  {
+   "name": "p18_2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_223455_7e3f4f5a-04d9-4e8c-8358-5dbf5e16e9f6.png"
+  }
+ ]
+}

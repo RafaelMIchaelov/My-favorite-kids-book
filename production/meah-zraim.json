@@ -284,7 +284,9 @@
    "5161": "f38bd7da-886d-44cc-b9ce-97248a933638",
    "5162": "c535e8fe-beda-4211-991f-6c1714b36add",
    "5171": "249d33eb-61c9-470c-b180-9328505fc53b",
-   "5172": "d98f9ae6-b227-4f1c-9688-0f5942fd3eb8"
+   "5172": "d98f9ae6-b227-4f1c-9688-0f5942fd3eb8",
+   "5123": "ae63ddb2-a4d6-4c7f-8f52-c7feb87d2daf",
+   "5124": "c759b5a8-3969-42d0-ae4a-0fc725cc655f"
   },
   "results": {
    "5031": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231615_16f7a023-51d6-4e63-b548-ae7f09c8dd54.png",
@@ -312,7 +314,24 @@
    "5161": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231712_f38bd7da-886d-44cc-b9ce-97248a933638.png",
    "5162": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231711_c535e8fe-beda-4211-991f-6c1714b36add.png",
    "5171": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231731_249d33eb-61c9-470c-b180-9328505fc53b.png",
-   "5172": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231731_d98f9ae6-b227-4f1c-9688-0f5942fd3eb8.png"
+   "5172": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_231731_d98f9ae6-b227-4f1c-9688-0f5942fd3eb8.png",
+   "5123": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_232942_ae63ddb2-a4d6-4c7f-8f52-c7feb87d2daf.png",
+   "5124": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261104_232942_c759b5a8-3969-42d0-ae4a-0fc725cc655f.png"
+  },
+  "qa": {
+   "p03": "both edits: all boys; pick r3_1 (closest to the original)",
+   "p04": "both all boys; pick r3_1",
+   "p05": "both all boys; pick r3_1",
+   "p06": "both all boys; pick r3_1 (nano changed more of the crowd)",
+   "p08": "r3_1 turned the window girl into a boy in a white tunic and blue sash, which reads as Amitai with a growing plant (he only has soil at this point); pick r3_2: all boys, seller an old man, the swap still visible",
+   "p10": "both three leaves; pick r3_1 (small fresh leaves)",
+   "p11": "r3_2 puts a curly boy in a white tunic (Amitai look-alike) in the parade; pick r3_1: all boys, all pots",
+   "p12": "r3_1: three leaves, boys carry pots, but the yellow-tunic boy holds a pot with a small plant; follow-up edit 5123/5124 from r3_1. r3_2 rejected: yellow boy holds a cut iris",
+   "p13": "both all boys with flowers in pots; pick r3_1",
+   "p14": "both three leaves, scene unchanged; pick r3_1",
+   "p15": "both three leaves and all boys; pick r3_1",
+   "p16": "r3_2 still has a girl (headscarf, braid) and only two leaves; pick r3_1",
+   "p17": "pick r3_1: exactly three leaves"
   }
  }
 }

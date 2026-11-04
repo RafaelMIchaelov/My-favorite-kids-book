@@ -125,7 +125,18 @@ main.stage{flex:1;min-height:0;position:relative;display:grid;place-items:center
 .slot{position:absolute;inset:0}
 .face.card{display:flex;flex-direction:column;border-radius:10px;box-shadow:var(--book-shadow)}
 .face.card>.card-pic{position:relative;inset:auto;flex:none;height:var(--ph)}
-.face.card>.card-words{position:relative;inset:auto;flex:1;min-height:0}
+.face.card>.card-words{position:relative;inset:auto;flex:1;min-height:0;flex-direction:column}
+/* on a phone the words share the card with the picture: keep them compact, keep the page number in the flow
+   under the words (so it never sits on the parents' button), and let a long page scroll rather than clip */
+.card-words .words-in{flex:1 1 auto;justify-content:safe center;gap:2.6cqh;padding:3.5cqh 8cqw 0;min-height:0;max-height:none;width:100%;overflow-y:auto}
+.card-words .folio{position:static;flex:none;padding:1cqh 0 3cqh}
+@container (max-height:215px){
+  .card-words .words-in{gap:1.8cqh;padding-top:2.5cqh}
+  .card-words .line{font-size:17px;line-height:1.5}
+  .card-words .orn{font-size:16px}
+  .card-words .parents{padding:4px 12px;font-size:12px}
+  .card-words .folio{padding:.5cqh 0 2cqh}
+}
 .book.single .face.blank,.book.single .face.end{border-radius:10px}
 .book.single .face.end{box-shadow:var(--book-shadow)}
 
@@ -318,7 +329,7 @@ function measure(){
     const pw = Math.floor(Math.min(W * 0.92 / 2, H * 0.93 * 0.75));
     return {mode:"spread", pw, ph:Math.floor(pw / 0.75), w:2 * pw, h:Math.floor(pw / 0.75), key:`s${W}x${H}`};
   }
-  const minWords = Math.max(150, Math.min(250, H * 0.3));
+  const minWords = Math.max(170, Math.min(260, H * 0.34));
   let cw = Math.min(W, 540), ph = cw / 0.75;
   if(ph > H - minWords){ ph = H - minWords; cw = ph * 0.75; }
   cw = Math.floor(cw); ph = Math.floor(ph);

@@ -10,7 +10,8 @@
   "basket": "the basket: a small oval basket woven from green-gold papyrus reeds, its outside sealed with dark brown pitch, with a woven reed lid, lined with cream cloth.",
   "princess": "the princess (Pharaoh's daughter): a kind young Egyptian woman of about twenty with warm bronze skin, a black straight bob-cut wig with bangs and a thin gold diadem with a small lotus at the front, gentle kohl-lined eyes, a white pleated linen gown, a broad collar necklace of turquoise, lapis and gold beads, and gold armbands.",
   "maidens": "her maidens: young Egyptian women in simple white linen dresses with small turquoise bead collars and black bob hair.",
-  "pharaoh": "Pharaoh: a stern, sulky Egyptian king, not monstrous, seated on a gold throne, wearing the tall red-and-white double crown and a blue-and-gold striped collar, holding a crook and a flail."
+  "pharaoh": "Pharaoh: a stern, sulky Egyptian king, not monstrous, seated on a gold throne, wearing the tall red-and-white double crown and a blue-and-gold striped collar, holding a crook and a flail.",
+  "father": "The father: a gentle Hebrew man of about thirty-five with warm brown skin, short dark curly hair, a short dark curly beard and kind tired eyes, in a plain undyed linen tunic with a brown woven sash."
  },
  "sheet_prompt": "Character reference sheet for a children's picture book. On plain warm ivory paper, five separate full-body figures standing in one row with clear empty space between them, all in exactly the same painting style, front three-quarter view, gentle expressions, nothing overlapping: 1) Miriam: a slender girl of about seven with warm brown skin, big dark almond eyes, rosy cheeks and a small brave smile; thick dark-brown wavy hair in one long braid over her shoulder tied with a red ribbon; a simple saffron-yellow linen dress to the shins with short sleeves and a woven blue belt; barefoot; her small frame drum hangs at her hip from a braided blue cord. 2) Miriam grown up: the same face as a warm, strong woman of about forty, the same long braid now with a few silver streaks and the red ribbon, a saffron-yellow linen dress with a woven blue belt, holding the same small frame drum. 3) the mother: a gentle young mother with warm brown skin and kind eyes, in a plain indigo-blue linen dress and a cream headscarf with a thin ochre stripe. 4) the princess (Pharaoh's daughter): a kind young Egyptian woman of about twenty with warm bronze skin, a black straight bob-cut wig with bangs and a thin gold diadem with a small lotus at the front, gentle kohl-lined eyes, a white pleated linen gown, a broad collar necklace of turquoise, lapis and gold beads, and gold armbands. 5) a small still life on the ground: a small oval basket woven from green-gold papyrus reeds, its outside sealed with dark brown pitch, with a woven reed lid, lined with cream cloth. Its lid is open and a chubby healthy newborn with a tuft of dark curls, wrapped in a soft cream linen cloth. lies inside; beside the basket leans a small round frame drum the size of a plate, with a pale cream goatskin head and a terracotta-red wooden rim painted with a ring of small white dots, on a braided blue cord. No background scenery, no labels, no extra people. Style: a children's picture-book painting in flat matte gouache on warm, visibly textured paper; hand-cut shapes with slightly imperfect edges and fine hand-drawn gold line. Ancient Egyptian Nile-kingdom stylization: gentle profile and three-quarter figures, frieze rhythm, flat stacked space, papyrus, lotus and palm motifs, patterned borders like painted friezes but warm and childlike. A gentle magical boho warmth with a few tiny warm fairy-light specks painted as flat round dots. Calm negative space. Palette: lapis blue, Nile turquoise, midnight navy, mustard gold, terracotta, ochre, ivory, gold line, papyrus and sage greens, small pomegranate-red and rose accents. No text, letters, numbers or hieroglyphs anywhere; no watermark or signature; no photorealism, no 3D render, no glossy digital look, no harsh black outlines; nothing scary or violent.",
  "scenes": {
@@ -242,5 +243,29 @@
   "source": "production/reader-tof-miriam/index.html",
   "artifact_url": "https://claude.ai/artifact/SQ4MY7ZnfkgSCPFqCBLhLA",
   "published": "2026-11-05"
+ },
+ "round2": {
+  "index_scheme": "9000 + new page number*10 + v; new pages p04-p06 (parents afraid, Miriam's dream, Miriam's promise) inserted before the birth at the author's request",
+  "jobs": {
+   "9041": "155c3c36-c8e6-40a5-866d-cbc5a93c97de",
+   "9042": "6998d3bc-c4c5-4613-a603-0d909125ffa9",
+   "9051": "4686f741-bfb4-47bd-8ba7-e405af59543c",
+   "9052": "162d28cb-7c38-4c6b-80ff-b236a4761665",
+   "9061": "e86c7176-1925-4866-a4a4-3a3eb90c06a3",
+   "9062": "68fe2a18-aaa6-4458-a787-852778394d21"
+  },
+  "results": {
+   "9041": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261105_010919_155c3c36-c8e6-40a5-866d-cbc5a93c97de.png",
+   "9042": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261105_010920_6998d3bc-c4c5-4613-a603-0d909125ffa9.png",
+   "9051": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261105_010921_4686f741-bfb4-47bd-8ba7-e405af59543c.png",
+   "9052": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261105_010919_162d28cb-7c38-4c6b-80ff-b236a4761665.png",
+   "9061": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261105_010921_e86c7176-1925-4866-a4a4-3a3eb90c06a3.png",
+   "9062": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261105_010920_68fe2a18-aaa6-4458-a787-852778394d21.png"
+  },
+  "scenes": {
+   "p04n": "Night inside the small, humble mud-brick house: the father and the mother sit close together on a woven mat beside a tiny oil lamp, worried; the father bows his head into one hand, the mother holds his arm and looks down sadly. Through a hanging cloth in the doorway, Miriam peeks in and listens with big worried eyes, her drum at her side. Deep blue night with a thin moon in the small window. The father is a gentle Hebrew man of about thirty-five with warm brown skin, short dark curly hair, a short dark curly beard and kind tired eyes, in a plain undyed linen tunic with a brown woven sash. Only the father, the mother and Miriam are in the picture.",
+   "p05n": "Night: Miriam sleeps peacefully on a woven mat under a striped blanket, her small drum beside her pillow, a soft smile on her face. Above her floats a big round dream bubble outlined in fine gold like a glowing sun disk; inside it she dreams of a glowing baby boy wrapped in cream linen, smiling, lying in the small papyrus basket among blue lotus flowers, surrounded by soft golden light; tiny stars drift around the dream. Miriam is the only person in the picture apart from the baby in her dream.",
+   "p06n": "Morning sunlight streams through the doorway of the small mud-brick house: Miriam stands between her parents, holding the mother's hand in one hand and the father's hand in the other, looking up at them with a serious, loving, determined face as she makes a promise; the mother kneels to Miriam's height, moved, one hand on her heart; the father bends down to listen, his worried face turning hopeful; Miriam's drum hangs at her hip. The father is a gentle Hebrew man of about thirty-five with warm brown skin, short dark curly hair, a short dark curly beard and kind tired eyes, in a plain undyed linen tunic with a brown woven sash. Only Miriam, the mother and the father are in the picture."
+  }
  }
 }

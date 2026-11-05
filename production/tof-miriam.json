@@ -204,24 +204,24 @@
   "8182": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261105_000737_7cc83540-56fb-44c8-86f1-f845781e4ead.png"
  },
  "picks": {
-  "cover": "r3_cover_1",
-  "p01": "r3_p01_1",
-  "p02": "r3_p02_1",
-  "p03": "p03_1",
+  "cover": "r4_cover_1",
+  "p01": "r4_p01_1",
+  "p02": "r4_p02_1",
+  "p03": "r4_p03_1",
   "p07": "r3_p07_1",
   "p08": "r3_p08_1",
   "p09": "r3_p09_1",
   "p10": "r3_p10_1",
-  "p11": "r3_p11_1",
+  "p11": "r4_p11_1",
   "p12": "r3_p12_1",
-  "p13": "r3_p13_1",
-  "p14": "r3_p14_1",
-  "p15": "r3_p15_1",
-  "p16": "r3_p16_1",
-  "p17": "r3_p17_1",
-  "p18": "r3_p18_1",
-  "p19": "r3_p19_1",
-  "p20": "r3_p20_1",
+  "p13": "r4_p13_1",
+  "p14": "r4_p14_1",
+  "p15": "r4_p15_1",
+  "p16": "r4_p16_1",
+  "p17": "r4_p17_1",
+  "p18": "r4_p18_1",
+  "p19": "r4_p19_1",
+  "p20": "r4_p20_1",
   "p21": "r3_p21_1",
   "p04": "r3_p04_1",
   "p05": "r3_p05_1",
@@ -264,7 +264,7 @@
  "reader": {
   "source": "production/reader-tof-miriam/index.html",
   "artifact_url": "https://claude.ai/artifact/SQ4MY7ZnfkgSCPFqCBLhLA",
-  "published": "2026-11-05"
+  "published": "2026-11-05 (version 2: 21 pages with the parents' fear, Miriam's dream and her promise; modest dress; review fixes)"
  },
  "round2": {
   "index_scheme": "9000 + new page number*10 + v; new pages p04-p06 (parents afraid, Miriam's dream, Miriam's promise) inserted before the birth at the author's request",
@@ -602,6 +602,31 @@
    "10192": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261105_023322_0b2cdc36-6638-44ef-a26a-365654b94bef.png",
    "10201": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261105_023349_b2f4ad4d-a9fb-4ff3-88ae-047a72eb5fe9.png",
    "10202": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261105_023349_ea01dde9-356a-45f0-83d2-d0ff67572a12.png"
-  }
+  },
+  "qa": "All 26 drafts compared with the current picks and zoomed. GPT edits picked everywhere: cover temple plain, plate-sized drum; p01 every carrier has two arms; p02 village women long sleeves and covered hair; p03 no cobra on Pharaoh's headcloth, scribes shaven with sleeves; p11 basket in a clump of reeds; p13/p14/p16/p18 only the princess wears diadem, broad collar, armbands and sash, maidens plain with bead necklaces; p13 left maiden a grown woman behind the princess; p14 separate arms, baby gently crying; p15 background princess with bob; p16 arms untangled; p17 Miriam's dress to the ankles, background women in ochre and terracotta; p18 both of the princess's hands under the baby; p19 every woman in a headscarf and long sleeves, no striped royal headcloths; p20 plain zigzag hem, drum on a blue cord. The nano edit on p20 added a second drum and was rejected."
+ },
+ "picks_before_r4": {
+  "cover": "r3_cover_1",
+  "p01": "r3_p01_1",
+  "p02": "r3_p02_1",
+  "p03": "p03_1",
+  "p07": "r3_p07_1",
+  "p08": "r3_p08_1",
+  "p09": "r3_p09_1",
+  "p10": "r3_p10_1",
+  "p11": "r3_p11_1",
+  "p12": "r3_p12_1",
+  "p13": "r3_p13_1",
+  "p14": "r3_p14_1",
+  "p15": "r3_p15_1",
+  "p16": "r3_p16_1",
+  "p17": "r3_p17_1",
+  "p18": "r3_p18_1",
+  "p19": "r3_p19_1",
+  "p20": "r3_p20_1",
+  "p21": "r3_p21_1",
+  "p04": "r3_p04_1",
+  "p05": "r3_p05_1",
+  "p06": "r3_p06_1"
  }
 }

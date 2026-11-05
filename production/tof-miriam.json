@@ -187,7 +187,27 @@
   "8181": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261105_000736_26ba46e9-e485-4542-bd02-1b58c95d4327.png",
   "8182": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261105_000737_7cc83540-56fb-44c8-86f1-f845781e4ead.png"
  },
- "picks": {},
+ "picks": {
+  "cover": "cover_2",
+  "p01": "p01_1",
+  "p02": "p02_1",
+  "p03": "p03_1",
+  "p04": "p04_2",
+  "p05": "p05_1",
+  "p06": "p06_2",
+  "p07": "p07_1",
+  "p08": "p08_2",
+  "p09": "p09_1",
+  "p10": "p10_1",
+  "p11": "p11_1",
+  "p12": "p12_1",
+  "p13": "p13_1",
+  "p14": "p14_2",
+  "p15": "p15_1",
+  "p16": "p16_2",
+  "p17": "p17_1",
+  "p18": "p18_1"
+ },
  "ref_media": {
   "miriam": "f01d0204-9d33-4922-94c6-88f7bcf640cf",
   "miriam_adult": "922a37a3-fec2-49ab-8606-587a0a86978e",
@@ -216,5 +236,11 @@
   "8161": "Years later: the sea split into two tall walls of turquoise water with fish visible inside; the whole people of Israel, men, women and children with bundles and sheep, walk across on the dry seabed; at the front, small in the picture, Moses, a bearded man in a simple brown-and-cream robe, raises his wooden staff; dawn light. A crowd seen from a distance, no close-up faces. Style: a children's picture-book painting in flat matte gouache on warm, visibly textured paper; hand-cut shapes with slightly imperfect edges and fine hand-drawn gold line. Ancient Egyptian Nile-kingdom stylization: gentle profile and three-quarter figures, frieze rhythm, flat stacked space, papyrus, lotus and palm motifs, patterned borders like painted friezes but warm and childlike. A gentle magical boho warmth with a few tiny warm fairy-light specks painted as flat round dots. Calm negative space. Palette: lapis blue, Nile turquoise, midnight navy, mustard gold, terracotta, ochre, ivory, gold line, papyrus and sage greens, small pomegranate-red and rose accents. No text, letters, numbers or hieroglyphs anywhere; no watermark or signature; no photorealism, no 3D render, no glossy digital look, no harsh black outlines; nothing scary or violent.",
   "8171": "Image 1 is Miriam grown up: copy her face, her long braid with silver streaks and the red ribbon, her saffron-yellow dress with the woven blue belt and her small frame drum exactly. Here she is a grown woman, not a child. On the far shore of the sea at sunrise: grown-up Miriam dances joyfully and lifts her small old frame drum high, leading a long line of Hebrew women and girls who dance after her with frame drums and swirling dresses; the calm sea behind them. Miriam is a grown woman here, not a child; the dancers are women and girls. Style: a children's picture-book painting in flat matte gouache on warm, visibly textured paper; hand-cut shapes with slightly imperfect edges and fine hand-drawn gold line. Ancient Egyptian Nile-kingdom stylization: gentle profile and three-quarter figures, frieze rhythm, flat stacked space, papyrus, lotus and palm motifs, patterned borders like painted friezes but warm and childlike. A gentle magical boho warmth with a few tiny warm fairy-light specks painted as flat round dots. Calm negative space. Palette: lapis blue, Nile turquoise, midnight navy, mustard gold, terracotta, ochre, ivory, gold line, papyrus and sage greens, small pomegranate-red and rose accents. No text, letters, numbers or hieroglyphs anywhere; no watermark or signature; no photorealism, no 3D render, no glossy digital look, no harsh black outlines; nothing scary or violent.",
   "8181": "Image 1 is Miriam grown up: copy her face, her long braid with silver streaks and the red ribbon, her saffron-yellow dress with the woven blue belt and her small frame drum exactly. Here she is a grown woman, not a child. Night in the desert camp: tents under a starry sky and a big moon; in the middle a round stone well with fresh water bubbling over its rim and flowing in little silver streams between the tents; grown-up Miriam sits by the well softly playing her small drum while children dance around it; one little girl holds a small drum of her own; warm, peaceful and magical. Miriam is a grown woman here, not a child; the dancing children are small, boys and girls. Style: a children's picture-book painting in flat matte gouache on warm, visibly textured paper; hand-cut shapes with slightly imperfect edges and fine hand-drawn gold line. Ancient Egyptian Nile-kingdom stylization: gentle profile and three-quarter figures, frieze rhythm, flat stacked space, papyrus, lotus and palm motifs, patterned borders like painted friezes but warm and childlike. A gentle magical boho warmth with a few tiny warm fairy-light specks painted as flat round dots. Calm negative space. Palette: lapis blue, Nile turquoise, midnight navy, mustard gold, terracotta, ochre, ivory, gold line, papyrus and sage greens, small pomegranate-red and rose accents. No text, letters, numbers or hieroglyphs anywhere; no watermark or signature; no photorealism, no 3D render, no glossy digital look, no harsh black outlines; nothing scary or violent."
+ },
+ "qa_round1": "All 38 pass: Miriam (saffron dress, braid with red ribbon, blue belt, drum with dotted terracotta rim), the mother and the princess stay consistent; no extra main characters. Picks favour the clearer action: cover_2 (bigger Miriam, calm sky for the title), p04_2 (Miriam looks at the baby), p08_2 (peeking), p12_1 (worried, deciding), p13_1 (hand raised as she speaks), p14_2 (Miriam leads the run), p16_2 (sunrise between the walls). p03 shows Pharaoh in the nemes rather than the double crown, which is fine.",
+ "reader": {
+  "source": "production/reader-tof-miriam/index.html",
+  "artifact_url": "https://claude.ai/artifact/SQ4MY7ZnfkgSCPFqCBLhLA",
+  "published": "2026-11-05"
  }
 }

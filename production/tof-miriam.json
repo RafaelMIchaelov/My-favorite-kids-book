@@ -1,0 +1,115 @@
+{
+ "style": "Style: a children's picture-book painting in flat matte gouache on warm, visibly textured paper; hand-cut shapes with slightly imperfect edges and fine hand-drawn gold line. Ancient Egyptian Nile-kingdom stylization: gentle profile and three-quarter figures, frieze rhythm, flat stacked space, papyrus, lotus and palm motifs, patterned borders like painted friezes but warm and childlike. A gentle magical boho warmth with a few tiny warm fairy-light specks painted as flat round dots. Calm negative space. Palette: lapis blue, Nile turquoise, midnight navy, mustard gold, terracotta, ochre, ivory, gold line, papyrus and sage greens, small pomegranate-red and rose accents.",
+ "avoid": "No text, letters, numbers or hieroglyphs anywhere; no watermark or signature; no photorealism, no 3D render, no glossy digital look, no harsh black outlines; nothing scary or violent.",
+ "cast": {
+  "miriam": "Miriam: a slender girl of about seven with warm brown skin, big dark almond eyes, rosy cheeks and a small brave smile; thick dark-brown wavy hair in one long braid over her shoulder tied with a red ribbon; a simple saffron-yellow linen dress to the shins with short sleeves and a woven blue belt; barefoot; her small frame drum hangs at her hip from a braided blue cord.",
+  "drum": "the drum: a small round frame drum the size of a plate, with a pale cream goatskin head and a terracotta-red wooden rim painted with a ring of small white dots, on a braided blue cord.",
+  "miriam_adult": "Miriam grown up: the same face as a warm, strong woman of about forty, the same long braid now with a few silver streaks and the red ribbon, a saffron-yellow linen dress with a woven blue belt, holding the same small frame drum.",
+  "mother": "the mother: a gentle young mother with warm brown skin and kind eyes, in a plain indigo-blue linen dress and a cream headscarf with a thin ochre stripe.",
+  "baby": "the baby: a chubby healthy newborn with a tuft of dark curls, wrapped in a soft cream linen cloth.",
+  "basket": "the basket: a small oval basket woven from green-gold papyrus reeds, its outside sealed with dark brown pitch, with a woven reed lid, lined with cream cloth.",
+  "princess": "the princess (Pharaoh's daughter): a kind young Egyptian woman of about twenty with warm bronze skin, a black straight bob-cut wig with bangs and a thin gold diadem with a small lotus at the front, gentle kohl-lined eyes, a white pleated linen gown, a broad collar necklace of turquoise, lapis and gold beads, and gold armbands.",
+  "maidens": "her maidens: young Egyptian women in simple white linen dresses with small turquoise bead collars and black bob hair.",
+  "pharaoh": "Pharaoh: a stern, sulky Egyptian king, not monstrous, seated on a gold throne, wearing the tall red-and-white double crown and a blue-and-gold striped collar, holding a crook and a flail."
+ },
+ "sheet_prompt": "Character reference sheet for a children's picture book. On plain warm ivory paper, five separate full-body figures standing in one row with clear empty space between them, all in exactly the same painting style, front three-quarter view, gentle expressions, nothing overlapping: 1) Miriam: a slender girl of about seven with warm brown skin, big dark almond eyes, rosy cheeks and a small brave smile; thick dark-brown wavy hair in one long braid over her shoulder tied with a red ribbon; a simple saffron-yellow linen dress to the shins with short sleeves and a woven blue belt; barefoot; her small frame drum hangs at her hip from a braided blue cord. 2) Miriam grown up: the same face as a warm, strong woman of about forty, the same long braid now with a few silver streaks and the red ribbon, a saffron-yellow linen dress with a woven blue belt, holding the same small frame drum. 3) the mother: a gentle young mother with warm brown skin and kind eyes, in a plain indigo-blue linen dress and a cream headscarf with a thin ochre stripe. 4) the princess (Pharaoh's daughter): a kind young Egyptian woman of about twenty with warm bronze skin, a black straight bob-cut wig with bangs and a thin gold diadem with a small lotus at the front, gentle kohl-lined eyes, a white pleated linen gown, a broad collar necklace of turquoise, lapis and gold beads, and gold armbands. 5) a small still life on the ground: a small oval basket woven from green-gold papyrus reeds, its outside sealed with dark brown pitch, with a woven reed lid, lined with cream cloth. Its lid is open and a chubby healthy newborn with a tuft of dark curls, wrapped in a soft cream linen cloth. lies inside; beside the basket leans a small round frame drum the size of a plate, with a pale cream goatskin head and a terracotta-red wooden rim painted with a ring of small white dots, on a braided blue cord. No background scenery, no labels, no extra people. Style: a children's picture-book painting in flat matte gouache on warm, visibly textured paper; hand-cut shapes with slightly imperfect edges and fine hand-drawn gold line. Ancient Egyptian Nile-kingdom stylization: gentle profile and three-quarter figures, frieze rhythm, flat stacked space, papyrus, lotus and palm motifs, patterned borders like painted friezes but warm and childlike. A gentle magical boho warmth with a few tiny warm fairy-light specks painted as flat round dots. Calm negative space. Palette: lapis blue, Nile turquoise, midnight navy, mustard gold, terracotta, ochre, ivory, gold line, papyrus and sage greens, small pomegranate-red and rose accents. No text, letters, numbers or hieroglyphs anywhere; no watermark or signature; no photorealism, no 3D render, no glossy digital look, no harsh black outlines; nothing scary or violent.",
+ "scenes": {
+  "cover": "Picture-book cover. Miriam stands among tall papyrus reeds at the edge of the Nile in the foreground, holding her small drum against her chest with both hands, looking with hope toward the small papyrus basket floating among blue lotus flowers in the middle ground. Behind, soft golden morning light over the wide river, palm trees and a distant Egyptian temple with columns. The top third of the picture is a calm, plain warm sky with nothing in it, for the title.",
+  "p01": "Early evening by the Nile: a village of small mud-brick houses with flat roofs at the river's edge; on the nearest rooftop sits Miriam, small in the picture, looking out at the wide river with palm trees, papyrus and a distant pyramid at sunset; below in the lane, tired Hebrew workers in plain undyed linen carry baskets of mud bricks home.",
+  "p02": "Dusk in the village lane: Miriam sits on a low mud-brick step and taps her small drum, singing with her eyes half closed; around her, tired Hebrew workers, men with short beards in plain linen tunics and women in headscarves, pause on their way home and smile; warm lamps glow in doorways; the first stars appear.",
+  "p03": "Inside Pharaoh's palace hall with tall lotus columns painted lapis and gold: Pharaoh sits on his gold throne, frowning and pointing, while two scribes kneel and write on papyrus scrolls; deep blue shadows; a serious mood that is still gentle enough for small children. No children in the picture.",
+  "p04": "Inside a small, humble mud-brick room at night: the mother sits on a woven mat holding the newborn baby wrapped in cream linen and smiles tenderly; Miriam kneels beside her and peeks at the baby with wonder, her drum at her side; a soft golden light glows from the baby and fills the whole room.",
+  "p05": "Night, a hidden corner of the house behind tall clay storage jars and a hanging cloth: Miriam sits cross-legged and softly sings to the baby, who sleeps wrapped in cream linen in her lap; she holds one finger to her lips; a tiny oil lamp; moonlight through a small high window.",
+  "p06": "In the courtyard of the mud-brick house in warm afternoon light: the mother sits weaving the small oval basket from papyrus reeds; Miriam sits beside her and hands her a bundle of reeds; a small clay pot of dark pitch with a brush stands nearby; bundles of papyrus lie on the ground.",
+  "p07": "Dawn at the Nile's edge among tall papyrus reeds: the mother kneels in the shallow water and gently sets the closed papyrus basket among the reeds; Miriam stands just behind her on the bank, holding her drum to her chest; mist on the water, a heron, a pink-gold sky.",
+  "p08": "Among very tall papyrus reeds at the river's edge, Miriam hides and peeks between the stems, brave and watchful, her drum hanging at her side; far away on the calm water among blue lotus flowers floats the small closed papyrus basket; a heron stands nearby; morning light.",
+  "p09": "On a sunny stone landing at the Nile with lotus-capital columns and palm trees: the princess walks down to the water with three maidens; one maiden carries a tall feather fan, another a folded linen towel; they laugh together; papyrus reeds and blue lotus flowers at the water's edge.",
+  "p10": "At the river's edge: the princess stands in the shallow water and points at the small papyrus basket among the reeds; one of her maidens wades in and reaches out to lift it; lotus flowers, papyrus, morning light.",
+  "p11": "A close, tender scene by the river: the princess kneels and lifts the lid of the papyrus basket; inside, the baby cries with a small open mouth and waving fists; her face fills with compassion, one hand on her heart; two maidens lean in behind her, surprised.",
+  "p12": "A close-up among tall papyrus stems: Miriam, hiding, presses one hand to her chest where her heart pounds, eyes wide, biting her lip, deciding; her small drum hangs at her side; through the reeds, small and far away, the princess holds the baby; a few dragonflies.",
+  "p13": "At the river's edge: Miriam has stepped out of the reeds and stands bravely before the princess, small but upright, one hand raised as she speaks, her drum at her hip; the princess, holding the baby wrapped in cream linen, looks down at her, surprised and curious; two maidens behind; papyrus and lotus around.",
+  "p14": "Running through the narrow lane of the Hebrew village: Miriam runs fast as the wind, her braid flying, pulling her mother by the hand; the mother runs too, holding up her dress, surprised and hopeful; chickens scatter, dust puffs, laundry flutters; joyful energy.",
+  "p15": "At the river's edge in soft golden light: the princess gently places the baby, wrapped in cream linen, into the mother's arms; the mother holds him close with tears of joy; Miriam stands beside them beaming, both hands on her drum; the maidens smile.",
+  "p16": "Years later: the sea split into two tall walls of turquoise water with fish visible inside; the whole people of Israel, men, women and children with bundles and sheep, walk across on the dry seabed; at the front, small in the picture, Moses, a bearded man in a simple brown-and-cream robe, raises his wooden staff; dawn light.",
+  "p17": "On the far shore of the sea at sunrise: grown-up Miriam dances joyfully and lifts her small old frame drum high, leading a long line of Hebrew women and girls who dance after her with frame drums and swirling dresses; the calm sea behind them.",
+  "p18": "Night in the desert camp: tents under a starry sky and a big moon; in the middle a round stone well with fresh water bubbling over its rim and flowing in little silver streams between the tents; grown-up Miriam sits by the well softly playing her small drum while children dance around it; one little girl holds a small drum of her own; warm, peaceful and magical."
+ },
+ "refs": {
+  "cover": [
+   "miriam",
+   "basket"
+  ],
+  "p01": [
+   "miriam"
+  ],
+  "p02": [
+   "miriam"
+  ],
+  "p03": [],
+  "p04": [
+   "miriam",
+   "mother"
+  ],
+  "p05": [
+   "miriam"
+  ],
+  "p06": [
+   "mother",
+   "miriam",
+   "basket"
+  ],
+  "p07": [
+   "mother",
+   "miriam",
+   "basket"
+  ],
+  "p08": [
+   "miriam",
+   "basket"
+  ],
+  "p09": [
+   "princess"
+  ],
+  "p10": [
+   "princess",
+   "basket"
+  ],
+  "p11": [
+   "princess",
+   "basket"
+  ],
+  "p12": [
+   "miriam"
+  ],
+  "p13": [
+   "miriam",
+   "princess"
+  ],
+  "p14": [
+   "miriam",
+   "mother"
+  ],
+  "p15": [
+   "princess",
+   "mother",
+   "miriam"
+  ],
+  "p16": [],
+  "p17": [
+   "miriam_adult"
+  ],
+  "p18": [
+   "miriam_adult"
+  ]
+ },
+ "index_scheme": "sheet: 7001/7002; pages: 8000 + page*10 + v (cover = page 0), gpt_image_2_5 xhigh 2k 3:4",
+ "jobs": {
+  "7001": "798a1a22-1646-4411-9fff-42facad71983",
+  "7002": "2680a3c6-926c-4a10-b340-8ee7b1ecbee2"
+ },
+ "results": {
+  "7001": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261105_000025_798a1a22-1646-4411-9fff-42facad71983.png",
+  "7002": "https://d8j0ntlcm91z4.cloudfront.net/user_2yJtzigPAHPeoEiFrF20qkzVf7t/hf_20261105_000025_2680a3c6-926c-4a10-b340-8ee7b1ecbee2.png"
+ },
+ "picks": {}
+}
